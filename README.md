@@ -1,2 +1,2 @@
 # CookBook-KG
-A knowledge graph for Chinese cookbook（中餐菜谱知识图谱）
+A knowledge graph for Chinese cookbook（中式菜谱知识图谱）
