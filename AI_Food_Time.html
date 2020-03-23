@@ -1,0 +1,1521 @@
+// file: AI_Food_Time_v6.html
+// function change: 增添每种类型实体选择是否显示的开关
+// time: 2020.03.23
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>中式菜谱知识图谱(作者：牛广林, 北航计算机)</title>
+    <meta name="description" content="中式菜谱可视化系统，能够显示菜品关联信息并提供搜索功能" />
+    <meta name="keywords" content="" />
+    <meta name="author" content="" />
+    <link rel="shortcut icon" href="">
+    <script>
+        var _hmt = _hmt || [];
+        (function() {
+            var hm = document.createElement("script");
+            hm.src = "https://hm.baidu.com/hm.js?464c614e438da7785d1dbd393096c677";
+            var s = document.getElementsByTagName("script")[0]; 
+            s.parentNode.insertBefore(hm, s);
+        })();
+    </script>
+    <script src="https://libs.baidu.com/jquery/2.1.4/jquery.min.js"></script>
+    <link href="https://libs.baidu.com/bootstrap/3.3.4/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<!-- 定义样式 -->
+<style>
+/*body的样式*/
+body {
+    background-color: #272b30;   /*背景颜色*/
+    padding-bottom: 30px, 40px;
+    text-align: center;
+    font-family: OpenSans-Light, PingFang SC, Hiragino Sans GB, Microsoft Yahei, Microsoft Jhenghei, sans-serif;
+}
+
+/*之前在js代码里面定义了classes，这边就给这些写样式*/
+.links line {
+    stroke: rgb(240, 240, 240); /*线的颜色*/
+    stroke-opacity: 0.2;        /*线的透明度*/
+}
+.links line.inactive {
+    /*display: none !important;*/
+    stroke-opacity: 0;
+}
+
+.linetexts {
+    fill-opacity: 0;
+    font-size: 8px ;
+    font-family: SimSun;
+    fill:#fff;
+}
+.linetexts.inactive {
+    display: none !important;
+}
+
+.nodes circle {
+    stroke: #fff;
+    stroke-width: 1.5px;        /*圆的描边宽度*/
+}
+.nodes circle:hover {
+    cursor: pointer;
+}
+.nodes circle.inactive {
+    display: none !important;
+}
+
+/*默认显示所有的圆圈，进入模式切换之后才会显示text*/
+.texts text {
+    display: none;
+}
+.texts text:hover {
+    cursor: pointer;
+}
+.texts text.inactive {
+    display: none !important;
+}
+
+/*indicator的样式*/
+#indicator {
+    position: absolute;
+    left: 30px;
+    bottom: 90px;
+    text-align: left;
+    color: #f2f2f2;
+    font-size: 16px;
+}
+
+/*indicator中每一个小的div/色块/图例的样式*/
+#indicator>div {
+    margin-bottom: 4px; 
+}
+
+#indicator span {
+    display: inline-block;
+    width: 35px;
+    height: 20px;
+    position: relative;
+    top: 2px;
+    margin-right: 8px;
+}
+
+/*mode-模式切换的style*/
+#mode {
+    position: absolute;
+    top: 100px;
+    left: 30px;
+}
+
+#mode span {
+    display: inline-block;
+    border: 1px solid #fff;
+    color: #fff;
+    padding: 6px 10px;
+    border-radius: 4px;
+    font-size: 14px;
+    transition: color, background-color .3s; /*CSS3中的渐变*/
+    -o-transition: color, background-color .3s;
+    -ms-transition: color, background-color .3s;
+    -moz-transition: color, background-color .3s;
+    -webkit-transition: color, background-color .3s;
+}
+
+/*当按键处于激活状态的时候*/
+#mode span.active {
+    background-color: #fff;
+    color: #333;
+    cursor: pointer;
+}
+
+/*当按键处于鼠标悬浮状态的时候*/
+#mode span:hover {
+    background-color: #aaa;
+    color: #333;
+    cursor: pointer;
+}
+
+/*switch1-菜品大类实体显示开关切换的style*/
+#switch1 {
+    position: absolute;
+    top: 236px;
+    left: 170px;
+}
+
+#switch1 span {
+    display: inline-block;
+    border: 1px solid #fff;
+    color: #fff;
+    padding: 3px 10px;
+    border-radius: 4px;
+    font-size: 12px;
+    transition: color, background-color .3s; /*CSS3中的渐变*/
+    -o-transition: color, background-color .3s;
+    -ms-transition: color, background-color .3s;
+    -moz-transition: color, background-color .3s;
+    -webkit-transition: color, background-color .3s;
+}
+
+/*当按键处于激活或者鼠标悬浮状态的时候*/
+#switch1 span.active, #switch1 span:hover {
+    background-color: #fff;
+    color: #333;
+    cursor: pointer;
+}
+
+/*switch2-菜品大类实体显示开关切换的style*/
+#switch2 {
+    position: absolute;
+    top: 265px;
+    left: 170px;
+}
+
+#switch2 span {
+    display: inline-block;
+    border: 1px solid #fff;
+    color: #fff;
+    padding: 3px 10px;
+    border-radius: 4px;
+    font-size: 12px;
+    transition: color, background-color .3s; /*CSS3中的渐变*/
+    -o-transition: color, background-color .3s;
+    -ms-transition: color, background-color .3s;
+    -moz-transition: color, background-color .3s;
+    -webkit-transition: color, background-color .3s;
+}
+
+/*当按键处于激活或者鼠标悬浮状态的时候*/
+#switch2 span.active, #switch2 span:hover {
+    background-color: #fff;
+    color: #333;
+    cursor: pointer;
+}
+
+/*switch3-菜品大类实体显示开关切换的style*/
+#switch3 {
+    position: absolute;
+    top: 293px;
+    left: 170px;
+}
+
+#switch3 span {
+    display: inline-block;
+    border: 1px solid #fff;
+    color: #fff;
+    padding: 3px 10px;
+    border-radius: 4px;
+    font-size: 12px;
+    transition: color, background-color .3s; /*CSS3中的渐变*/
+    -o-transition: color, background-color .3s;
+    -ms-transition: color, background-color .3s;
+    -moz-transition: color, background-color .3s;
+    -webkit-transition: color, background-color .3s;
+}
+
+/*当按键处于激活或者鼠标悬浮状态的时候*/
+#switch3 span.active, #switch3 span:hover {
+    background-color: #fff;
+    color: #333;
+    cursor: pointer;
+}
+
+/*info的样式*/
+#info {
+    position: absolute;
+    top: 10px;
+    /*bottom: 40px;*/
+    right: 20px;
+    text-align: right;
+    width: 255px;
+}
+
+#info p {
+    color: #fff;
+    font-size: 12px;
+    margin-top: 0px;
+    margin-bottom: 5px;
+}
+
+#info p span {
+    color: #888;
+    margin-right: 10px;
+}
+
+/*搜索框的样式*/
+#search input {
+    position: absolute;
+    top: 150px;
+    left: 30px;
+    color: #fff;
+    border: none;
+    outline: none;
+    box-shadow: none;
+    width: 200px;
+    background-color: #666;
+}
+
+</style>
+
+<body>
+    <!-- 标题 -->
+    <h1 style="color: #fff;font-size: 32px;margin-bottom: 0px;margin-top: 0px; text-align: left;margin-left: 40px">AI Food Time(爱食光) mini版</h1>
+
+    <!-- 定义div存放关系图 -->
+    <!-- NOTE: 父元素采用相对定位，里面的元素采用绝对定位 -->
+    <div style="text-align: center;position: relative;">
+        <svg width="860" height="560" style="margin-left: 30px;margin-bottom: -150px" id="svg1"></svg>
+        <!-- 图例 -->
+        <div id="indicator"></div>
+
+        <!-- 模式 -->
+        <div id="mode">
+            <span class="active" style="border-top-right-radius: 0;border-bottom-right-radius: 0;">Circles</span>
+            <span style="border-top-left-radius: 0;border-bottom-left-radius: 0;position: relative;left: -5px;">Texts</span>
+        </div>
+
+	<!-- 显示切换1 -->
+        <div id="switch1">
+            <span class="active" style="border-top-right-radius: 0;border-bottom-right-radius: 0;">On</span>
+            <span style="border-top-left-radius: 0;border-bottom-left-radius: 0;position: relative;left: -5px;">Off</span>
+        </div>
+
+	<!-- 显示切换2 -->
+        <div id="switch2">
+            <span class="active" style="border-top-right-radius: 0;border-bottom-right-radius: 0;">On</span>
+            <span style="border-top-left-radius: 0;border-bottom-left-radius: 0;position: relative;left: -5px;">Off</span>
+        </div>
+
+	<!-- 显示切换3 -->
+        <div id="switch3">
+            <span class="active" style="border-top-right-radius: 0;border-bottom-right-radius: 0;">On</span>
+            <span style="border-top-left-radius: 0;border-bottom-left-radius: 0;position: relative;left: -5px;">Off</span>
+        </div>
+
+
+        <!-- 搜索框 -->
+        <div id="search">
+            <input type="text" autocomplete="off" class="form-control">
+        </div>
+
+        <!-- 每个结点的信息 -->
+        <div id="info">
+            <h4></h4>
+        </div>
+    </div>
+    /*
+    <div style="text-align: center;position: relative;">
+        <svg width="960" height="240" id="svg2" style="margin-right: 60px;">
+            <!-- D3 -->
+            <g></g>
+        </svg>
+    </div>
+    */
+
+</body>
+<script src="https://d3js.org/d3.v4.min.js"></script>
+<!-- 自定义的js代码 -->
+<script>
+$(document).ready(function() {
+    // 定义svg变量，选出第一个图
+    var svg = d3.select("#svg1"), 
+              width = svg.attr('width'), 
+              height = svg.attr('height');
+
+    var names = ['菜品大类', '精品特色菜', '原料']
+    var colors = ['#6ca46c', '#ca635f', '#4e88af'];
+//    var outlier_avatar_ID = ['0001', '0002', '0003', '0004', '0005', '0006', '0007', '0008', '0009', '0177', '0377', '0378', '0659'];
+
+    for (var i = 0; i < names.length; i++) {
+        // 选中indicator，每一种都append一个div，就是前面的小色块
+        $('#indicator').append("<div><span style='background-color:" + colors[i] + "'></span>" + names[i] +"</div>")
+    }
+
+    // 定义D3的simulation是如何展示出来的
+    var simulation = d3.forceSimulation()
+        .force("link", d3.forceLink().id(function(d) {
+            return d.id;
+        }))
+        .force("charge", d3.forceManyBody())
+        .force("center", d3.forceCenter(width / 2, height / 2));
+
+    // 存之后生成的关系图数据
+    var graph;
+
+    // d3.json("vizdata_vivrecard_relation.json", function(error, data) {
+    // d3.json("test_vizdata_vivrecard_relation.json", function(error, data) {
+    d3.json("https://raw.githubusercontent.com/ngl567/CookBook-KG/master/visualization/vizdata.json", function(error, data) {
+        if (error) throw error;
+
+        graph = data;
+        // console.log(graph)
+
+        // D3数据驱动文档
+        // 用links去驱动line的线宽
+        var link = svg.append('g')
+            .attr("class", "links")
+            .selectAll("line")
+            .data(graph.links)
+            .enter().append("line")
+            .attr('stroke-width', function(d){
+            // return Math.sqrt(d.value);
+            return 1;
+            });
+
+        //边上的文字（实体之间的关系） 
+        var linktext = svg.append('g')
+            .attr("class", "linetexts")
+            .selectAll("text")
+            .data(graph.links)
+            .enter()
+            .append("text")
+            .style("display","block")
+            .style("color","red")
+            .text(function(d){
+                return d.relation;
+            });
+
+        // 添加所有的node
+        var node = svg.append('g')
+            .attr('class', 'nodes')
+            .selectAll('circle')
+            .data(graph.nodes)
+            .enter().append('circle')
+            .attr("r", function(d) {
+                return d.size
+            })
+            .attr('fill', function(d){ // 填充的颜色
+                return colors[d.group];
+            })
+            .attr('stroke', 'none')    // 没有描边
+            .attr('name', function(d){
+                return d.id;
+            })
+            .call(d3.drag()             // 绑定d3的拖动函数
+                .on("start", dragstarted) // 拖动开始
+                .on("drag", dragged)      // 拖动进行
+                .on("end", dragended));   // 拖动结束
+
+        // 文本
+        // 两种显示模式，每个结点可以用一个圆或者文本表示
+        var text = svg.append('g')
+            .attr("class", "texts")
+            .selectAll("text")
+            .data(graph.nodes)
+            .enter().append("text")
+            .attr("font-size", function(d) {
+                return d.size
+            })
+            .attr("fill", function(d) {
+                return colors[d.group];
+            })
+            .attr('name', function(d) {
+                return d.id;
+            })
+            .text(function(d) {
+                return d.id;
+            })
+            .attr('text-anchor', 'middle')
+            .call(d3.drag()
+                .on("start", dragstarted)
+                .on("drag", dragged)
+                .on("end", dragended));
+
+        // 给node加title, 当鼠标悬浮在圆圈上的时候
+        node.append('title').text(function(d){
+            return d.id;
+        })
+
+        // 处理缩放
+        svg.call(d3.zoom()
+            .scaleExtent([1 / 8, 8])
+            .on("zoom", zoomed));
+         
+        function zoomed() {
+            link.attr("transform", d3.event.transform);
+            node.attr("transform", d3.event.transform);
+            text.attr("transform", d3.event.transform);
+            linktext.attr('transform', d3.event.transform);
+        }
+
+        simulation
+            .nodes(graph.nodes)
+            .on("tick", ticked);
+
+        simulation.force("link")
+            .links(graph.links);
+
+        function ticked() {
+            link
+                .attr("x1", function(d) {
+                    return d.source.x;
+                })
+                .attr("y1", function(d) {
+                    return d.source.y;
+                })
+                .attr("x2", function(d) {
+                    return d.target.x;
+                })
+                .attr("y2", function(d) {
+                    return d.target.y;
+                });
+
+            linktext.attr("dx",function(d){ return (d.source.x + d.target.x) / 2 ; });
+            linktext.attr("dy",function(d){ return (d.source.y + d.target.y) / 2 ; });
+
+            node
+                .attr("cx", function(d) {
+                    return d.x;
+                })
+                .attr("cy", function(d) {
+                    return d.y;
+                });
+
+            text
+                .attr("dx", function(d) {
+                    return d.x;
+                })
+                .attr("dy", function(d) {
+                    return d.y;
+                });
+        }
+    })
+
+    // 拖动事件函数
+    var dragging = false;
+
+    function dragstarted(d) {
+        if (!d3.event.active) simulation.alphaTarget(0.3).restart();
+        d.fx = d.x;
+        d.fy = d.y;
+        dragging = true;
+    }
+
+    function dragged(d) {
+        d.fx = d3.event.x;
+        d.fy = d3.event.y;
+    }
+
+    function dragended(d) {
+        if (!d3.event.active) simulation.alphaTarget(0);
+        d.fx = null;
+        d.fy = null;
+        dragging = false;
+    }
+
+    // 处理模式点击后的事件(这些元素页面上本来有)
+    $('#mode span').click(function(event) {
+        // 把mode里面所有span的active全部去掉
+        // 把被点击的这个设置为active
+        $('#mode span').removeClass('active')
+        $(this).addClass('active')
+
+        if ($(this).text() == 'Circles') {
+            // 隐藏所有文本里面的svg元素
+            // 把node里面的显示出来
+            $('.texts text').hide();
+            $('.nodes circle').show();
+        }
+        else {
+            $('.texts text').show();
+            $('.nodes circle').hide ();
+        }
+    });
+
+    // 三个开关标志，True表示打开
+    var sw1 = true;
+    var sw2 = true;
+    var sw3 = true;
+
+    // 处理开关1点击后的事件(这些元素页面上本来有)
+    $('#switch1 span').click(function(event) {
+        // 把mode里面所有span的active全部去掉
+        // 把被点击的这个设置为active
+        $('#switch1 span').removeClass('active')
+        $(this).addClass('active')
+
+        if ($(this).text() == 'On') {
+	    sw1 = true;
+	    d3.select('#svg1 .nodes').selectAll('circle').attr('class', function(d){
+                // 当前选中类型实体显示
+		if (d.group == 0 && sw1 == true) {
+		    return '';
+		}
+		else if (d.group == 1 && sw2 == true){
+		    return '';
+		}
+		else if (d.group == 2 && sw3 == true){
+		    return '';
+		}
+		else{
+		    return 'inactive'
+		}
+            });
+	    d3.select("#svg1 .links").selectAll('line').attr('class', function(d) {
+                if ((d.source.group == 0 || d.target.group == 0) && sw1 == false) {
+                    return 'inactive';
+                }
+		else if ((d.source.group == 1 || d.target.group == 1) && sw2 == false){
+		    return 'inactive';
+		}
+		else if ((d.source.group == 2 || d.target.group == 2) && sw3 == false){
+		    return 'inactive';
+		}
+		else{
+		    return '';
+		}
+            });
+	    d3.select('#svg1 .texts').selectAll('text').attr('class', function(d){
+                // 当前选中类型实体显示
+		if (d.group == 0 && sw1 == true) {
+		    return '';
+		}
+		else if (d.group == 1 && sw2 == true){
+		    return '';
+		}
+		else if (d.group == 2 && sw3 == true){
+		    return '';
+		}
+		else{
+		    return 'inactive'
+		}
+            });
+	    /*
+	    d3.select('#svg1 .nodes').selectAll('circle').attr('class', function(d){
+                // 当前选中类型实体隐藏
+		if (d.group == 0) {
+		    return '';
+		}
+		if (d.group == 1 && sw2 == false){
+		    return 'inactive';
+		}
+		if (d.group == 2 && sw3 == false){
+		    return 'inactive';
+		}
+            });
+	    d3.select('#svg1 .texts').selectAll('text').attr('class', function(d){
+                // 当前选中类型实体隐藏
+		if (d.group == 0) {
+		    return '';
+		}
+		if (d.group == 1 && sw2 == false){
+		    return 'inactive';
+		}
+		if (d.group == 2 && sw3 == false){
+		    return 'inactive';
+		}
+            });
+	    d3.select("#svg1 .links").selectAll('line').attr('class', function(d) {
+                if (d.source.group == 0 || d.target.group == 0) {
+                    return '';
+                }
+		if ((d.source.group == 1 || d.target.group == 1) && sw2 == false){
+		    return 'inactive';
+		}
+		if ((d.source.group == 2 || d.target.group == 2) && sw3 == false){
+		    return 'inactive';
+		}
+            });
+	    */
+        }
+        else {
+	    sw1 = false;
+	    d3.select('#svg1 .nodes').selectAll('circle').attr('class', function(d){
+                // 当前选中类型实体显示
+		if (d.group == 0 && sw1 == true) {
+		    return '';
+		}
+		else if (d.group == 1 && sw2 == true){
+		    return '';
+		}
+		else if (d.group == 2 && sw3 == true){
+		    return '';
+		}
+		else{
+		    return 'inactive'
+		}
+            });
+	    d3.select("#svg1 .links").selectAll('line').attr('class', function(d) {
+                if ((d.source.group == 0 || d.target.group == 0) && sw1 == false) {
+                    return 'inactive';
+                }
+		else if ((d.source.group == 1 || d.target.group == 1) && sw2 == false){
+		    return 'inactive';
+		}
+		else if ((d.source.group == 2 || d.target.group == 2) && sw3 == false){
+		    return 'inactive';
+		}
+		else{
+		    return '';
+		}
+            });
+	    d3.select('#svg1 .texts').selectAll('text').attr('class', function(d){
+                // 当前选中类型实体显示
+		if (d.group == 0 && sw1 == true) {
+		    return '';
+		}
+		else if (d.group == 1 && sw2 == true){
+		    return '';
+		}
+		else if (d.group == 2 && sw3 == true){
+		    return '';
+		}
+		else{
+		    return 'inactive'
+		}
+            });
+	    /*
+	    d3.select('#svg1 .nodes').selectAll('circle').attr('class', function(d){
+                // 当前选中类型实体隐藏
+		if (d.group == 0) {
+		    return 'inactive';
+		}
+		if (d.group == 1 && sw2 == false){
+		    return 'inactive';
+		}
+		if (d.group == 2 && sw3 == false){
+		    return 'inactive';
+		}
+            });
+	    d3.select('#svg1 .texts').selectAll('text').attr('class', function(d){
+                // 当前选中类型实体隐藏
+		if (d.group == 0) {
+		    return 'inactive';
+		}
+		if (d.group == 1 && sw2 == false){
+		    return 'inactive';
+		}
+		if (d.group == 2 && sw3 == false){
+		    return 'inactive';
+		}
+            });
+	    d3.select("#svg1 .links").selectAll('line').attr('class', function(d) {
+                if (d.source.group == 0 || d.target.group == 0) {
+                    return 'inactive';
+                }
+		if ((d.source.group == 1 || d.target.group == 1) && sw2 == false){
+		    return 'inactive';
+		}
+		if ((d.source.group == 2 || d.target.group == 2) && sw3 == false){
+		    return 'inactive';
+		}
+            });
+	    */
+        }
+    });
+
+    // 处理开关2点击后的事件(这些元素页面上本来有)
+    $('#switch2 span').click(function(event) {
+        // 把mode里面所有span的active全部去掉
+        // 把被点击的这个设置为active
+        $('#switch2 span').removeClass('active')
+        $(this).addClass('active')
+
+        if ($(this).text() == 'On') {
+	    sw2 = true;
+	    d3.select('#svg1 .nodes').selectAll('circle').attr('class', function(d){
+                // 当前选中类型实体显示
+		if (d.group == 0 && sw1 == true) {
+		    return '';
+		}
+		else if (d.group == 1 && sw2 == true){
+		    return '';
+		}
+		else if (d.group == 2 && sw3 == true){
+		    return '';
+		}
+		else{
+		    return 'inactive'
+		}
+            });
+	    d3.select("#svg1 .links").selectAll('line').attr('class', function(d) {
+                if ((d.source.group == 0 || d.target.group == 0) && sw1 == false) {
+                    return 'inactive';
+                }
+		else if ((d.source.group == 1 || d.target.group == 1) && sw2 == false){
+		    return 'inactive';
+		}
+		else if ((d.source.group == 2 || d.target.group == 2) && sw3 == false){
+		    return 'inactive';
+		}
+		else{
+		    return '';
+		}
+            });
+	    d3.select('#svg1 .texts').selectAll('text').attr('class', function(d){
+                // 当前选中类型实体显示
+		if (d.group == 0 && sw1 == true) {
+		    return '';
+		}
+		else if (d.group == 1 && sw2 == true){
+		    return '';
+		}
+		else if (d.group == 2 && sw3 == true){
+		    return '';
+		}
+		else{
+		    return 'inactive'
+		}
+            });
+	    /*
+	    d3.select('#svg1 .nodes').selectAll('circle').attr('class', function(d){
+                // 当前选中类型实体显示
+		if (d.group == 1) {
+		    return '';
+		}
+		if (d.group == 0 && sw1 == false){
+		    return 'inactive';
+		}
+		if (d.group == 2 && sw3 == false){
+		    return 'inactive';
+		}
+            });
+	    d3.select('#svg1 .texts').selectAll('text').attr('class', function(d){
+                // 当前选中类型实体显示
+		if (d.group == 1) {
+		    return '';
+		}
+		if (d.group == 0 && sw1 == false){
+		    return 'inactive';
+		}
+		if (d.group == 2 && sw3 == false){
+		    return 'inactive';
+		}
+            });
+	    d3.select("#svg1 .links").selectAll('line').attr('class', function(d) {
+                if (d.source.group == 1 || d.target.group == 1) {
+                    return '';
+                }
+		if ((d.source.group == 0 || d.target.group == 0) && sw1 == false){
+		    return 'inactive';
+		}
+		if ((d.source.group == 2 || d.target.group == 2) && sw3 == false){
+		    return 'inactive';
+		}
+            });
+	    */
+        }
+        else {
+	    sw2 = false;
+	    d3.select('#svg1 .nodes').selectAll('circle').attr('class', function(d){
+                // 当前选中类型实体显示
+		if (d.group == 0 && sw1 == true) {
+		    return '';
+		}
+		else if (d.group == 1 && sw2 == true){
+		    return '';
+		}
+		else if (d.group == 2 && sw3 == true){
+		    return '';
+		}
+		else{
+		    return 'inactive'
+		}
+            });
+	    d3.select("#svg1 .links").selectAll('line').attr('class', function(d) {
+                if ((d.source.group == 0 || d.target.group == 0) && sw1 == false) {
+                    return 'inactive';
+                }
+		else if ((d.source.group == 1 || d.target.group == 1) && sw2 == false){
+		    return 'inactive';
+		}
+		else if ((d.source.group == 2 || d.target.group == 2) && sw3 == false){
+		    return 'inactive';
+		}
+		else{
+		    return '';
+		}
+            });
+	    d3.select('#svg1 .texts').selectAll('text').attr('class', function(d){
+                // 当前选中类型实体显示
+		if (d.group == 0 && sw1 == true) {
+		    return '';
+		}
+		else if (d.group == 1 && sw2 == true){
+		    return '';
+		}
+		else if (d.group == 2 && sw3 == true){
+		    return '';
+		}
+		else{
+		    return 'inactive'
+		}
+            });
+	    /*
+	    d3.select('#svg1 .nodes').selectAll('circle').attr('class', function(d){
+                // 当前选中类型实体显示
+		if (d.group == 1) {
+		    return 'inactive';
+		}
+		if (d.group == 0 && sw1 == false){
+		    return 'inactive';
+		}
+		if (d.group == 2 && sw3 == false){
+		    return 'inactive';
+		}
+            });
+	    d3.select('#svg1 .texts').selectAll('text').attr('class', function(d){
+                // 当前选中类型实体显示
+		if (d.group == 1) {
+		    return 'inactive';
+		}
+		if (d.group == 0 && sw1 == false){
+		    return 'inactive';
+		}
+		if (d.group == 2 && sw3 == false){
+		    return 'inactive';
+		}
+            });
+	    d3.select("#svg1 .links").selectAll('line').attr('class', function(d) {
+                if (d.source.group == 1 || d.target.group == 1) {
+                    return 'inactive';
+                }
+		if ((d.source.group == 0 || d.target.group == 0) && sw1 == false){
+		    return 'inactive';
+		}
+		if ((d.source.group == 2 || d.target.group == 2) && sw3 == false){
+		    return 'inactive';
+		}
+            });
+	    */
+        }
+    });
+
+    // 处理开关3点击后的事件(这些元素页面上本来有)
+    $('#switch3 span').click(function(event) {
+        // 把mode里面所有span的active全部去掉
+        // 把被点击的这个设置为active
+        $('#switch3 span').removeClass('active')
+        $(this).addClass('active')
+
+        if ($(this).text() == 'On') {
+	    sw3 = true;
+	    d3.select('#svg1 .nodes').selectAll('circle').attr('class', function(d){
+                // 当前选中类型实体显示
+		if (d.group == 0 && sw1 == true) {
+		    return '';
+		}
+		else if (d.group == 1 && sw2 == true){
+		    return '';
+		}
+		else if (d.group == 2 && sw3 == true){
+		    return '';
+		}
+		else{
+		    return 'inactive'
+		}
+            });
+	    d3.select("#svg1 .links").selectAll('line').attr('class', function(d) {
+                if ((d.source.group == 0 || d.target.group == 0) && sw1 == false) {
+                    return 'inactive';
+                }
+		else if ((d.source.group == 1 || d.target.group == 1) && sw2 == false){
+		    return 'inactive';
+		}
+		else if ((d.source.group == 2 || d.target.group == 2) && sw3 == false){
+		    return 'inactive';
+		}
+		else{
+		    return '';
+		}
+            });
+	    d3.select('#svg1 .texts').selectAll('text').attr('class', function(d){
+                // 当前选中类型实体显示
+		if (d.group == 0 && sw1 == true) {
+		    return '';
+		}
+		else if (d.group == 1 && sw2 == true){
+		    return '';
+		}
+		else if (d.group == 2 && sw3 == true){
+		    return '';
+		}
+		else{
+		    return 'inactive'
+		}
+            });
+	    /*
+	    d3.select('#svg1 .nodes').selectAll('circle').attr('class', function(d){
+                // 当前选中类型实体显示
+		if (d.group == 2) {
+		    return '';
+		}
+		if (d.group == 0 && sw1 == false){
+		    return 'inactive';
+		}
+		if (d.group == 1 && sw2 == false){
+		    return 'inactive';
+		}
+            });
+	    d3.select('#svg1 .texts').selectAll('text').attr('class', function(d){
+                // 当前选中类型实体显示
+		if (d.group == 2) {
+		    return '';
+		}
+		if (d.group == 0 && sw1 == false){
+		    return 'inactive';
+		}
+		if (d.group == 1 && sw2 == false){
+		    return 'inactive';
+		}
+            });
+	    d3.select("#svg1 .links").selectAll('line').attr('class', function(d) {
+                if (d.source.group == 2 || d.target.group == 2) {
+                    return '';
+                }
+		if ((d.source.group == 0 || d.target.group == 0) && sw1 == false){
+		    return 'inactive';
+		}
+		if ((d.source.group == 1 || d.target.group == 1) && sw2 == false){
+		    return 'inactive';
+		}
+            });
+	    */
+        }
+        else {
+	    sw3 = false;
+	    d3.select('#svg1 .nodes').selectAll('circle').attr('class', function(d){
+                // 当前选中类型实体显示
+		if (d.group == 0 && sw1 == true) {
+		    return '';
+		}
+		else if (d.group == 1 && sw2 == true){
+		    return '';
+		}
+		else if (d.group == 2 && sw3 == true){
+		    return '';
+		}
+		else{
+		    return 'inactive'
+		}
+            });
+	    d3.select("#svg1 .links").selectAll('line').attr('class', function(d) {
+                if ((d.source.group == 0 || d.target.group == 0) && sw1 == false) {
+                    return 'inactive';
+                }
+		else if ((d.source.group == 1 || d.target.group == 1) && sw2 == false){
+		    return 'inactive';
+		}
+		else if ((d.source.group == 2 || d.target.group == 2) && sw3 == false){
+		    return 'inactive';
+		}
+		else{
+		    return '';
+		}
+            });
+	    d3.select('#svg1 .texts').selectAll('text').attr('class', function(d){
+                // 当前选中类型实体显示
+		if (d.group == 0 && sw1 == true) {
+		    return '';
+		}
+		else if (d.group == 1 && sw2 == true){
+		    return '';
+		}
+		else if (d.group == 2 && sw3 == true){
+		    return '';
+		}
+		else{
+		    return 'inactive'
+		}
+            });
+	    /*
+	    d3.select('#svg1 .nodes').selectAll('circle').attr('class', function(d){
+                // 当前选中类型实体显示
+		if (d.group == 2) {
+		    return 'inactive';
+		}
+		if (d.group == 0 && sw1 == false){
+		    return 'inactive';
+		}
+		if (d.group == 1 && sw2 == false){
+		    return 'inactive';
+		}
+            });
+	    d3.select('#svg1 .texts').selectAll('text').attr('class', function(d){
+                // 当前选中类型实体显示
+		if (d.group == 2) {
+		    return 'inactive';
+		}
+		if (d.group == 0 && sw1 == false){
+		    return 'inactive';
+		}
+		if (d.group == 1 && sw2 == false){
+		    return 'inactive';
+		}
+            });
+	    d3.select("#svg1 .links").selectAll('line').attr('class', function(d) {
+                if (d.source.group == 2 || d.target.group == 2) {
+                    return 'inactive';
+                }
+		if ((d.source.group == 0 || d.target.group == 0) && sw1 == false){
+		    return 'inactive';
+		}
+		if ((d.source.group == 1 || d.target.group == 1) && sw2 == false){
+		    return 'inactive';
+		}
+            });
+	    */
+        }
+    });
+
+    // 处理事件：选中结点后只显示选中点及其直接相邻点
+    // 这些元素原来没有，后面添加上去，所以写法和上面不同
+    // 为#svg1中所有的 `.nodes circle` 元素，绑定了 `mouseenter`事件 
+    $('#svg1').on('mouseenter', '.nodes circle', function(event) {
+        // 拖动的时候，如果碰到别的结点，效果会发生变化，看起来很乱
+        // 所以拖动的时候不允许触发鼠标进入事件
+        if (!dragging) {
+            var name = $(this).attr('name');
+
+            // 把info标题的颜色改为结点所属类别的颜色
+            $('#info h4').css('color', $(this).attr('fill')).text(name);
+            // 去掉旧的<p></p>
+            $('#info p').remove();
+
+            /*
+	    // 增加各个人物的头像
+            if (typeof(info[name]) != "undefined") {
+                avatar_ID = info[name]['ID'][0]
+                if(outlier_avatar_ID.indexOf(avatar_ID) != -1) {
+                    avatar_ID = avatar_ID + '0'
+                }
+                $('#info').append('<p>' + '<img src="http://one-piece.com/vivre/icon/' + avatar_ID + '.jpg" />' + '</p>');
+            }
+	    */
+
+            for (var key in info[name]) {
+                value = info[name][key];
+
+                var flag_none = false;
+                for (var item in value) {
+                    if (value[item] == null || value[item] == 'N/A' || value[item] == '') {
+                        flag_none = true;
+                        break;
+                    }
+                } 
+                if (flag_none == true) {              // 排除为空的属性值
+                    continue;
+                }
+                if (key.indexOf("年前") != -1) { // 排除历史的属性值
+                    continue;
+                }
+                // 排除不想要的字段
+                if (key == '和路飞的身高比例') {
+                    continue;
+                }
+                $('#info').append('<p><span>' + key + '</span></p>');
+		var item_info = '';
+		count = 0
+		for (var food_item in info[name][key]){
+			if (count == 0){
+				item_info = item_info + info[name][key][food_item];
+			}
+			else{
+				item_info = item_info + "&nbsp;||&nbsp;" + info[name][key][food_item];
+			}
+			count = count + 1;
+		}
+		$('#info').append('<p>' + item_info + '</p>');
+            }
+
+            d3.select('#svg1 .nodes').selectAll('circle').attr('class', function(d){
+                // 是目前悬浮的那个
+                if (d.id == name) {
+                    return '';
+                }
+
+                // 不是悬浮的那个，需要显示相邻的circle，对其他的圆圈做处理
+                // 遍历图中的所有link
+                for (var i = 0; i < graph.links.length; i++) {
+                    if (graph.links[i]['source'].id == name && graph.links[i]['target'].id == d.id) {
+                        return '';
+                    }
+                    if (graph.links[i]['target'].id == name && graph.links[i]['source'].id == d.id) {
+                        return '';
+                    }
+                }
+
+                return 'inactive';
+            });
+
+            // 处理连接line, 不相连的line不显示
+            d3.select("#svg1 .links").selectAll('line').attr('class', function(d) {
+                if (d.source.id == name || d.target.id == name) {
+                    return '';
+                } else {
+                    return 'inactive';
+                }
+            });
+
+            // 只显示之间相连的关系名
+            d3.select("#svg1 .linetexts").selectAll('text').attr('class', function(d) {
+                if (d.source.id == name || d.target.id == name) {
+                    d3.select(this).attr('fill-opacity', 1);
+                } else {
+                    d3.select(this).attr('fill-opacity', 0);
+                }
+            })
+
+            // UPDATE: 对于text也同时隐藏
+            d3.select('#svg1 .texts').selectAll('text').attr('class', function(d){
+                if (d.id == name) {
+                    return '';
+                }
+
+                for (var i = 0; i < graph.links.length; i++) {
+                    if (graph.links[i]['source'].id == name && graph.links[i]['target'].id == d.id) {
+                        return '';
+                    }
+                    if (graph.links[i]['target'].id == name && graph.links[i]['source'].id == d.id) {
+                        return '';
+                    }
+                }
+
+                return 'inactive';
+            });
+        }
+    });
+
+    // 处理鼠标移开的事件上
+    $('#svg1').on('mouseleave', '.nodes circle', function(event) {
+        if (!dragging && $('#search input').val() != '') {
+	    /*
+            //如果搜索框还有东西，移开鼠标后仍然显示搜索的结果
+            var name = $('#search input').val();
+            d3.select('#svg1 .nodes').selectAll('circle').attr('class', function(d) {
+                if (d.id.toLowerCase().indexOf(name.toLowerCase()) >= 0) {
+                    return '';
+                } else {
+                   return 'inactive';
+                }
+            });
+            d3.select('#svg1 .texts').selectAll('text').attr('class', function(d) {
+                if (d.id.toLowerCase().indexOf(name.toLowerCase()) >= 0) {
+                    return '';
+                } else {
+                    return 'inactive';
+                }
+            });
+            d3.select("#svg1 .links").selectAll('line').attr('class', function(d) {
+                return 'inactive';
+            });
+	    //d3.select('#svg1 .links').selectAll('line').attr('class', '');;
+	    d3.select("#svg1 .linetexts").selectAll('text').attr('fill-opacity', function(d) {
+                return 0;
+            });
+	    */
+        }
+        else if (!dragging && $('#search input').val() == '') {
+            // 否则，离开时把nodes和links的inactive去掉
+            //d3.select('#svg1 .texts').selectAll('text').attr('class', '');;
+            //d3.select('#svg1 .nodes').selectAll('circle').attr('class', '');;
+            //d3.select('#svg1 .links').selectAll('line').attr('class', '');;
+            d3.select("#svg1 .linetexts").selectAll('text').attr('fill-opacity', 0);
+	    d3.select('#svg1 .nodes').selectAll('circle').attr('class', function(d){
+                // 当前选中类型实体显示
+		if (d.group == 0 && sw1 == true) {
+		    return '';
+		}
+		else if (d.group == 1 && sw2 == true){
+		    return '';
+		}
+		else if (d.group == 2 && sw3 == true){
+		    return '';
+		}
+		else{
+		    return 'inactive'
+		}
+            });
+	    d3.select("#svg1 .links").selectAll('line').attr('class', function(d) {
+                if ((d.source.group == 0 || d.target.group == 0) && sw1 == false) {
+                    return 'inactive';
+                }
+		else if ((d.source.group == 1 || d.target.group == 1) && sw2 == false){
+		    return 'inactive';
+		}
+		else if ((d.source.group == 2 || d.target.group == 2) && sw3 == false){
+		    return 'inactive';
+		}
+		else{
+		    return '';
+		}
+            });
+	    d3.select('#svg1 .texts').selectAll('text').attr('class', function(d){
+                // 当前选中类型实体显示
+		if (d.group == 0 && sw1 == true) {
+		    return '';
+		}
+		else if (d.group == 1 && sw2 == true){
+		    return '';
+		}
+		else if (d.group == 2 && sw3 == true){
+		    return '';
+		}
+		else{
+		    return 'inactive'
+		}
+            });
+        }
+    });
+
+    $('#svg1').on('mouseenter', '.texts text', function(event) {
+        if (!dragging) {
+            var name = $(this).attr('name');
+
+            // 把info标题的颜色改为结点所属类别的颜色
+            $('#info h4').css('color', $(this).attr('fill')).text(name);
+            // 去掉旧的<p></p>
+            $('#info p').remove();
+
+            /*
+	    // 增加各个人物的头像
+            if (typeof(info[name]) != "undefined") {
+                avatar_ID = info[name]['ID'][0]
+                if(outlier_avatar_ID.indexOf(avatar_ID) != -1) {
+                    avatar_ID = avatar_ID + '0'
+                }
+                $('#info').append('<p>' + '<img src="http://one-piece.com/vivre/icon/' + avatar_ID + '.jpg" />' + '</p>');
+            }
+	    */
+
+            for (var key in info[name]) {
+                value = info[name][key];
+
+                var flag_none = false;
+                for (var item in value) {
+                    if (value[item] == null || value[item] == 'N/A' || value[item] == '') {
+                        flag_none = true;
+                        break;
+                    }
+                } 
+                if (flag_none == true) {              // 排除为空的属性值
+                    continue;
+                }
+                if (key.indexOf("年前") != -1) { // 排除历史的属性值
+                    continue;
+                }
+                // 排除不想要的字段
+                if (key == '和路飞的身高比例') {
+                    continue;
+                }
+
+		$('#info').append('<p><span>' + key + '</span></p>');
+		var item_info = '';
+		count = 0
+		for (var food_item in info[name][key]){
+			if (count == 0){
+				item_info = item_info + info[name][key][food_item];
+			}
+			else{
+				item_info = item_info + "&nbsp;||&nbsp;" + info[name][key][food_item];
+			}
+			count = count + 1;
+		}
+		$('#info').append('<p>' + item_info + '</p>');
+                //$('#info').append('<p><span>' + key + '</span>' + info[name][key] + '</p>');
+            }
+
+            d3.select('#svg1 .texts').selectAll('text').attr('class', function(d){
+                if (d.id == name) {
+                    return '';
+                }
+
+                for (var i = 0; i < graph.links.length; i++) {
+                    if (graph.links[i]['source'].id == name && graph.links[i]['target'].id == d.id) {
+                        return '';
+                    }
+                    if (graph.links[i]['target'].id == name && graph.links[i]['source'].id == d.id) {
+                        return '';
+                    }
+                }
+
+                return 'inactive';
+            });
+
+            d3.select("#svg1 .links").selectAll('line').attr('class', function(d) {
+                if (d.source.id == name || d.target.id == name) {
+                    return '';
+                } else {
+                    return 'inactive';
+                }
+            });
+
+            // 只显示之间相连的关系名
+            d3.select("#svg1 .linetexts").selectAll('text').attr('class', function(d) {
+                if (d.source.id == name || d.target.id == name) {
+                    d3.select(this).attr('fill-opacity', 1);
+                } else {
+                    d3.select(this).attr('fill-opacity', 0);
+                }
+            })
+
+            // UPDATE: 对于circle也同时隐藏
+            d3.select('#svg1 .nodes').selectAll('circle').attr('class', function(d){
+                // 是目前悬浮的那个
+                if (d.id == name) {
+                    return '';
+                }
+
+                // 不是悬浮的那个，需要显示相邻的circle，对其他的圆圈做处理
+                // 遍历图中的所有link
+                for (var i = 0; i < graph.links.length; i++) {
+                    if (graph.links[i]['source'].id == name && graph.links[i]['target'].id == d.id) {
+                        return '';
+                    }
+                    if (graph.links[i]['target'].id == name && graph.links[i]['source'].id == d.id) {
+                        return '';
+                    }
+                }
+
+                return 'inactive';
+            });
+        }
+    });
+
+    $('#svg1').on('mouseleave', '.texts text', function(event) {
+        if (!dragging && $('#search input').val() != '') {
+	    /*
+            // 如果搜索框还有东西，移开鼠标后仍然显示搜索的结果
+            var name = $('#search input').val();
+            d3.select('#svg1 .nodes').selectAll('circle').attr('class', function(d) {
+                if (d.id.toLowerCase().indexOf(name.toLowerCase()) >= 0) {
+                   return '';
+                } else {
+                   return 'inactive';
+                }
+            });
+            d3.select('#svg1 .texts').selectAll('text').attr('class', function(d) {
+                if (d.id.toLowerCase().indexOf(name.toLowerCase()) >= 0) {
+                    return '';
+                } else {
+                    return 'inactive';
+                }
+            });
+            d3.select("#svg1 .links").selectAll('line').attr('class', function(d) {
+                return 'inactive';
+            });
+	    //d3.select('#svg1 .links').selectAll('line').attr('class', '');;
+	    d3.select("#svg1 .linetexts").selectAll('text').attr('fill-opacity', function(d) {
+                return 0;
+            });
+	    */
+        }
+        else if (!dragging && $('#search input').val() == '') {
+            // 否则，离开时把nodes和links的inactive去掉
+            //d3.select('#svg1 .texts').selectAll('text').attr('class', '');;
+            //d3.select('#svg1 .nodes').selectAll('circle').attr('class', '');;
+            //d3.select('#svg1 .links').selectAll('line').attr('class', '');;
+            d3.select("#svg1 .linetexts").selectAll('text').attr('fill-opacity', 0);
+	    d3.select('#svg1 .nodes').selectAll('circle').attr('class', function(d){
+                // 当前选中类型实体显示
+		if (d.group == 0 && sw1 == true) {
+		    return '';
+		}
+		else if (d.group == 1 && sw2 == true){
+		    return '';
+		}
+		else if (d.group == 2 && sw3 == true){
+		    return '';
+		}
+		else{
+		    return 'inactive'
+		}
+            });
+	    d3.select("#svg1 .links").selectAll('line').attr('class', function(d) {
+                if ((d.source.group == 0 || d.target.group == 0) && sw1 == false) {
+                    return 'inactive';
+                }
+		else if ((d.source.group == 1 || d.target.group == 1) && sw2 == false){
+		    return 'inactive';
+		}
+		else if ((d.source.group == 2 || d.target.group == 2) && sw3 == false){
+		    return 'inactive';
+		}
+		else{
+		    return '';
+		}
+            });
+	    d3.select('#svg1 .texts').selectAll('text').attr('class', function(d){
+                // 当前选中类型实体显示
+		if (d.group == 0 && sw1 == true) {
+		    return '';
+		}
+		else if (d.group == 1 && sw2 == true){
+		    return '';
+		}
+		else if (d.group == 2 && sw3 == true){
+		    return '';
+		}
+		else{
+		    return 'inactive'
+		}
+            });
+        }
+    });
+
+    // 搜索框
+    $('#search input').keyup(function(event) {
+        // 如果输入为空，全部显示出来
+        if ($(this).val() == '') {
+            d3.select('#svg1 .texts').selectAll('text').attr('class', '');;
+            d3.select('#svg1 .nodes').selectAll('circle').attr('class', '');;
+            d3.select('#svg1 .links').selectAll('line').attr('class', '');;
+            d3.select("#svg1 .linetexts").selectAll('text').attr('fill-opacity', 0);
+        }
+        else { // 筛选，判断这三个东西里的元素是否包含输入的东西
+            var name = $(this).val();
+            d3.select('#svg1 .nodes').selectAll('circle').attr('class', function(d) {
+                if (d.id.toLowerCase().indexOf(name.toLowerCase()) >= 0) {
+                    return '';
+                } else {
+                    return 'inactive';
+                }
+            });
+            d3.select('#svg1 .texts').selectAll('text').attr('class', function(d) {
+                if (d.id.toLowerCase().indexOf(name.toLowerCase()) >= 0) {
+                    return '';
+                } else {
+                    return 'inactive';
+                }
+            });
+            d3.select("#svg1 .links").selectAll('line').attr('class', function(d) {
+                return 'inactive';
+            });
+            d3.select("#svg1 .linetexts").selectAll('text').attr('fill-opacity', 0);
+        }
+    });
+
+    // 如果用删除键删除了
+    // 点击到搜索框内
+    $('#search input').bind('click', function(e) { 
+       if ($('#search input').val() == '') {
+           d3.select('#svg1 .texts').selectAll('text').attr('class', '');;
+           d3.select('#svg1 .nodes').selectAll('circle').attr('class', '');;
+           d3.select('#svg1 .links').selectAll('line').attr('class', '');;
+           d3.select("#svg1 .linetexts").selectAll('text').attr('fill-opacity', 0);
+       }
+    })
+    // 点击到搜索框外
+    $('#search input').bind('blur', function(e) { 
+       if ($('#search input').val() == '') {
+           d3.select('#svg1 .texts').selectAll('text').attr('class', '');;
+           d3.select('#svg1 .nodes').selectAll('circle').attr('class', '');;
+           d3.select('#svg1 .links').selectAll('line').attr('class', '');;
+           d3.select("#svg1 .linetexts").selectAll('text').attr('fill-opacity', 0);
+       }
+    })
+
+
+    // 结点信息框
+    var info;
+
+    // d3.json("vizdata_vivrecard_avpair.json", function(error, data){
+    d3.json("https://raw.githubusercontent.com/ngl567/CookBook-KG/master/visualization/entities_item.json", function(error, data){
+        info = data;
+    })
+
+});
+</script>
+</html>
