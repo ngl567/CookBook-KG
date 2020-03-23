@@ -1,6 +1,3 @@
-// file: index_v6.html
-// function change: 增添每种类型实体选择是否显示的开关
-// time: 2020.03.23
 
 <!DOCTYPE html>
 <html>
@@ -91,7 +88,7 @@ body {
 
 /*indicator中每一个小的div/色块/图例的样式*/
 #indicator>div {
-    margin-bottom: 4px; 
+    margin-bottom: 10px; 
 }
 
 #indicator span {
@@ -141,7 +138,7 @@ body {
 /*switch1-菜品大类实体显示开关切换的style*/
 #switch1 {
     position: absolute;
-    top: 236px;
+    top: 225px;
     left: 170px;
 }
 
@@ -169,7 +166,7 @@ body {
 /*switch2-菜品大类实体显示开关切换的style*/
 #switch2 {
     position: absolute;
-    top: 265px;
+    top: 260px;
     left: 170px;
 }
 
@@ -225,11 +222,11 @@ body {
 /*info的样式*/
 #info {
     position: absolute;
-    top: 10px;
+    top: 0px;			/*10px*/
     /*bottom: 40px;*/
-    right: 20px;
-    text-align: right;
-    width: 255px;
+    right: 10px;   		/*20px*/
+    text-align: right;		/*right*/
+    width: 253px;  		/*255px*/
 }
 
 #info p {
@@ -241,7 +238,34 @@ body {
 
 #info p span {
     color: #888;
-    margin-right: 10px;
+    margin-right: 0px;
+}
+
+/*tips的样式*/
+#tips {
+    position: absolute;
+    left: 20px;
+    right: 10px;
+    top: 350px;
+    text-align: left;
+    color: #f2f2f2;
+    font-size: 12px;
+    width:230px;
+}
+
+/*indicator中每一个小的div/色块/图例的样式*/
+#tips>div {
+    margin-bottom: 5px; 
+}
+
+#tips span {
+    display: inline-block;
+    width: 60px;
+    height: 20px;
+    position: relative;
+    top: 2px;
+    margin-right: 8px;
+    font-size: 16px;
 }
 
 /*搜索框的样式*/
@@ -261,7 +285,7 @@ body {
 
 <body>
     <!-- 标题 -->
-    <h1 style="color: #fff;font-size: 32px;margin-bottom: 0px;margin-top: 0px; text-align: left;margin-left: 40px">AI Food Time(爱食光) mini版</h1>
+    <h1 style="color: #fff;font-size: 32px;margin-bottom: 10px;margin-top: 10px; text-align: left;margin-left: 40px">AI Food Time(爱食光) mini版</h1>
 
     <!-- 定义div存放关系图 -->
     <!-- NOTE: 父元素采用相对定位，里面的元素采用绝对定位 -->
@@ -304,6 +328,9 @@ body {
         <div id="info">
             <h4></h4>
         </div>
+
+	<!-- 提示 -->
+        <div id="tips"></div>
     </div>
     /*
     <div style="text-align: center;position: relative;">
@@ -331,6 +358,13 @@ $(document).ready(function() {
     for (var i = 0; i < names.length; i++) {
         // 选中indicator，每一种都append一个div，就是前面的小色块
         $('#indicator').append("<div><span style='background-color:" + colors[i] + "'></span>" + names[i] +"</div>")
+    }
+
+    var help = ['小助手', '1.开始如果没有节点和边的网状可视化显示，刷新便可出现', '2.鼠标放置在任意节点上，出现和此节点相关的所有节点及之间的关系，右侧自动呈现菜品相关信息', '3.搜索框中输入菜品名称，呈现此菜品所有相关节点，并且此时鼠标位于某个节点上方时移开鼠标能够保持知识图谱当前状态', '4.模式切换按钮可切换对节点的不同可视化表示，Circles为点，Texts为文字', '5.左侧不同颜色的条形表示不同类型的节点，On/Off切换开关可打开或关闭同样类型所有节点的可视化显示'];
+    $('#tips').append("<div><span>" + help[0] + "</span></div>")
+    for (var i = 1; i < help.length; i++) {
+        // 选中indicator，每一种都append一个div，就是前面的小色块
+        $('#tips').append("<div>" + help[i] +"</div>")
     }
 
     // 定义D3的simulation是如何展示出来的
