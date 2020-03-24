@@ -378,8 +378,6 @@ $(document).ready(function() {
     // 存之后生成的关系图数据
     var graph;
 
-    // d3.json("vizdata_vivrecard_relation.json", function(error, data) {
-    // d3.json("test_vizdata_vivrecard_relation.json", function(error, data) {
     d3.json("https://raw.githubusercontent.com/ngl567/CookBook-KG/master/visualization/vizdata_mimini.json", function(error, data) {
         if (error) throw error;
 
@@ -1108,17 +1106,6 @@ $(document).ready(function() {
             // 去掉旧的<p></p>
             $('#info p').remove();
 
-            /*
-	    // 增加各个人物的头像
-            if (typeof(info[name]) != "undefined") {
-                avatar_ID = info[name]['ID'][0]
-                if(outlier_avatar_ID.indexOf(avatar_ID) != -1) {
-                    avatar_ID = avatar_ID + '0'
-                }
-                $('#info').append('<p>' + '<img src="http://one-piece.com/vivre/icon/' + avatar_ID + '.jpg" />' + '</p>');
-            }
-	    */
-
             for (var key in info[name]) {
                 value = info[name][key];
 
@@ -1132,13 +1119,7 @@ $(document).ready(function() {
                 if (flag_none == true) {              // 排除为空的属性值
                     continue;
                 }
-                if (key.indexOf("年前") != -1) { // 排除历史的属性值
-                    continue;
-                }
-                // 排除不想要的字段
-                if (key == '和路飞的身高比例') {
-                    continue;
-                }
+		    
                 $('#info').append('<p><span>' + key + '</span></p>');
 		var item_info = '';
 		count = 0
@@ -1303,17 +1284,6 @@ $(document).ready(function() {
             // 去掉旧的<p></p>
             $('#info p').remove();
 
-            /*
-	    // 增加各个人物的头像
-            if (typeof(info[name]) != "undefined") {
-                avatar_ID = info[name]['ID'][0]
-                if(outlier_avatar_ID.indexOf(avatar_ID) != -1) {
-                    avatar_ID = avatar_ID + '0'
-                }
-                $('#info').append('<p>' + '<img src="http://one-piece.com/vivre/icon/' + avatar_ID + '.jpg" />' + '</p>');
-            }
-	    */
-
             for (var key in info[name]) {
                 value = info[name][key];
 
@@ -1325,13 +1295,6 @@ $(document).ready(function() {
                     }
                 } 
                 if (flag_none == true) {              // 排除为空的属性值
-                    continue;
-                }
-                if (key.indexOf("年前") != -1) { // 排除历史的属性值
-                    continue;
-                }
-                // 排除不想要的字段
-                if (key == '和路飞的身高比例') {
                     continue;
                 }
 
@@ -1545,11 +1508,10 @@ $(document).ready(function() {
     // 结点信息框
     var info;
 
-    // d3.json("vizdata_vivrecard_avpair.json", function(error, data){
     d3.json("https://raw.githubusercontent.com/ngl567/CookBook-KG/master/visualization/entities_item_mimini.json", function(error, data){
         info = data;
     })
-
+	
 });
 </script>
 </html>
