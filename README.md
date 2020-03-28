@@ -8,7 +8,7 @@ A knowledge graph for Chinese cookbook（中式菜谱知识图谱）\
 + 可以直接显示出每种菜品所需主料，辅料，配料及其具体数量和烹饪方法，与网上的一些菜谱网页相比更加简单直观
 ## 功能使用
 ### 可视化展示及搜索：
-![image](https://github.com/ngl567/CookBook-KG/blob/master/miniviz-1.png)  ![image](https://github.com/ngl567/CookBook-KG/blob/master/miniviz-2.png)  
+![image](https://github.com/ngl567/CookBook-KG/blob/master/miniviz-1.png)  ![image](https://github.com/ngl567/CookBook-KG/blob/master/miniviz-2-fig.png)  
 同一类实体用相同颜色的节点表示，鼠标位于某个节点上方时显示其相关联的其它实体和之间的关系名称
 具有同一类实体显示开关，节点显示模式转换，并支持搜索功能
 + **mini**版：包含10大类，**50**种菜品之间的关联关系，包括菜品制作的各种食材和制作步骤  
