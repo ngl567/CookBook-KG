@@ -1,0 +1,3678 @@
+{
+    "links": [
+        {
+            "relation": "选材",
+            "source": "元宝红烧肉",
+            "target": "五花肉",
+            "value": 3
+        },
+        {
+            "relation": "选材",
+            "source": "元宝红烧肉",
+            "target": "老抽",
+            "value": 3
+        },
+        {
+            "relation": "选材",
+            "source": "元宝红烧肉",
+            "target": "生抽",
+            "value": 3
+        },
+        {
+            "relation": "选材",
+            "source": "元宝红烧肉",
+            "target": "料酒",
+            "value": 3
+        },
+        {
+            "relation": "选材",
+            "source": "元宝红烧肉",
+            "target": "糖",
+            "value": 3
+        },
+        {
+            "relation": "选材",
+            "source": "元宝红烧肉",
+            "target": "香叶",
+            "value": 3
+        },
+        {
+            "relation": "选材",
+            "source": "元宝红烧肉",
+            "target": "水",
+            "value": 3
+        },
+        {
+            "relation": "选材",
+            "source": "山楂红烧肉",
+            "target": "五花肉",
+            "value": 3
+        },
+        {
+            "relation": "选材",
+            "source": "山楂红烧肉",
+            "target": "山楂",
+            "value": 3
+        },
+        {
+            "relation": "选材",
+            "source": "山楂红烧肉",
+            "target": "糖",
+            "value": 3
+        },
+        {
+            "relation": "选材",
+            "source": "山楂红烧肉",
+            "target": "八角",
+            "value": 3
+        },
+        {
+            "relation": "选材",
+            "source": "山楂红烧肉",
+            "target": "香叶",
+            "value": 3
+        },
+        {
+            "relation": "选材",
+            "source": "山楂红烧肉",
+            "target": "老抽",
+            "value": 3
+        },
+        {
+            "relation": "选材",
+            "source": "山楂红烧肉",
+            "target": "生抽",
+            "value": 3
+        },
+        {
+            "relation": "选材",
+            "source": "山楂红烧肉",
+            "target": "料酒",
+            "value": 3
+        },
+        {
+            "relation": "选材",
+            "source": "山楂红烧肉",
+            "target": "盐",
+            "value": 3
+        },
+        {
+            "relation": "选材",
+            "source": "栗子红烧肉",
+            "target": "五花肉",
+            "value": 3
+        },
+        {
+            "relation": "选材",
+            "source": "栗子红烧肉",
+            "target": "板栗",
+            "value": 3
+        },
+        {
+            "relation": "选材",
+            "source": "栗子红烧肉",
+            "target": "姜",
+            "value": 3
+        },
+        {
+            "relation": "选材",
+            "source": "栗子红烧肉",
+            "target": "桂皮",
+            "value": 3
+        },
+        {
+            "relation": "选材",
+            "source": "栗子红烧肉",
+            "target": "酱油",
+            "value": 3
+        },
+        {
+            "relation": "选材",
+            "source": "栗子红烧肉",
+            "target": "糖",
+            "value": 3
+        },
+        {
+            "relation": "选材",
+            "source": "栗子红烧肉",
+            "target": "八角",
+            "value": 3
+        },
+        {
+            "relation": "选材",
+            "source": "桂香红烧肉",
+            "target": "五花肉",
+            "value": 3
+        },
+        {
+            "relation": "选材",
+            "source": "桂香红烧肉",
+            "target": "葱",
+            "value": 3
+        },
+        {
+            "relation": "选材",
+            "source": "桂香红烧肉",
+            "target": "姜",
+            "value": 3
+        },
+        {
+            "relation": "选材",
+            "source": "桂香红烧肉",
+            "target": "桂皮",
+            "value": 3
+        },
+        {
+            "relation": "选材",
+            "source": "桂香红烧肉",
+            "target": "香叶",
+            "value": 3
+        },
+        {
+            "relation": "选材",
+            "source": "桂香红烧肉",
+            "target": "老抽",
+            "value": 3
+        },
+        {
+            "relation": "选材",
+            "source": "桂香红烧肉",
+            "target": "生抽",
+            "value": 3
+        },
+        {
+            "relation": "选材",
+            "source": "桂香红烧肉",
+            "target": "糖",
+            "value": 3
+        },
+        {
+            "relation": "选材",
+            "source": "桂香红烧肉",
+            "target": "料酒",
+            "value": 3
+        },
+        {
+            "relation": "选材",
+            "source": "冻豆腐红烧肉",
+            "target": "五花肉",
+            "value": 3
+        },
+        {
+            "relation": "选材",
+            "source": "冻豆腐红烧肉",
+            "target": "冻豆腐",
+            "value": 3
+        },
+        {
+            "relation": "选材",
+            "source": "冻豆腐红烧肉",
+            "target": "青菜",
+            "value": 3
+        },
+        {
+            "relation": "选材",
+            "source": "冻豆腐红烧肉",
+            "target": "油",
+            "value": 3
+        },
+        {
+            "relation": "选材",
+            "source": "冻豆腐红烧肉",
+            "target": "姜",
+            "value": 3
+        },
+        {
+            "relation": "选材",
+            "source": "冻豆腐红烧肉",
+            "target": "蒜",
+            "value": 3
+        },
+        {
+            "relation": "选材",
+            "source": "冻豆腐红烧肉",
+            "target": "大料",
+            "value": 3
+        },
+        {
+            "relation": "选材",
+            "source": "冻豆腐红烧肉",
+            "target": "香叶",
+            "value": 3
+        },
+        {
+            "relation": "选材",
+            "source": "冻豆腐红烧肉",
+            "target": "盐",
+            "value": 3
+        },
+        {
+            "relation": "选材",
+            "source": "冻豆腐红烧肉",
+            "target": "生抽",
+            "value": 3
+        },
+        {
+            "relation": "选材",
+            "source": "冻豆腐红烧肉",
+            "target": "老抽",
+            "value": 3
+        },
+        {
+            "relation": "选材",
+            "source": "冻豆腐红烧肉",
+            "target": "糖",
+            "value": 3
+        },
+        {
+            "relation": "选材",
+            "source": "红烧排骨",
+            "target": "排骨",
+            "value": 3
+        },
+        {
+            "relation": "选材",
+            "source": "红烧排骨",
+            "target": "糖",
+            "value": 3
+        },
+        {
+            "relation": "选材",
+            "source": "红烧排骨",
+            "target": "酱油",
+            "value": 3
+        },
+        {
+            "relation": "选材",
+            "source": "红烧排骨",
+            "target": "料酒",
+            "value": 3
+        },
+        {
+            "relation": "选材",
+            "source": "红烧排骨",
+            "target": "花椒",
+            "value": 3
+        },
+        {
+            "relation": "选材",
+            "source": "红烧排骨",
+            "target": "姜",
+            "value": 3
+        },
+        {
+            "relation": "选材",
+            "source": "无酱油版红烧排骨",
+            "target": "排骨",
+            "value": 3
+        },
+        {
+            "relation": "选材",
+            "source": "无酱油版红烧排骨",
+            "target": "姜",
+            "value": 3
+        },
+        {
+            "relation": "选材",
+            "source": "无酱油版红烧排骨",
+            "target": "糖",
+            "value": 3
+        },
+        {
+            "relation": "选材",
+            "source": "无酱油版红烧排骨",
+            "target": "胡椒",
+            "value": 3
+        },
+        {
+            "relation": "选材",
+            "source": "无酱油版红烧排骨",
+            "target": "香叶",
+            "value": 3
+        },
+        {
+            "relation": "选材",
+            "source": "无酱油版红烧排骨",
+            "target": "盐",
+            "value": 3
+        },
+        {
+            "relation": "选材",
+            "source": "秘制红烧排骨",
+            "target": "排骨",
+            "value": 3
+        },
+        {
+            "relation": "选材",
+            "source": "秘制红烧排骨",
+            "target": "葱",
+            "value": 3
+        },
+        {
+            "relation": "选材",
+            "source": "秘制红烧排骨",
+            "target": "姜",
+            "value": 3
+        },
+        {
+            "relation": "选材",
+            "source": "秘制红烧排骨",
+            "target": "糖",
+            "value": 3
+        },
+        {
+            "relation": "选材",
+            "source": "秘制红烧排骨",
+            "target": "酱油",
+            "value": 3
+        },
+        {
+            "relation": "选材",
+            "source": "红烧排骨胡萝卜",
+            "target": "排骨",
+            "value": 3
+        },
+        {
+            "relation": "选材",
+            "source": "红烧排骨胡萝卜",
+            "target": "胡萝卜",
+            "value": 3
+        },
+        {
+            "relation": "选材",
+            "source": "红烧排骨胡萝卜",
+            "target": "植物油",
+            "value": 3
+        },
+        {
+            "relation": "选材",
+            "source": "红烧排骨胡萝卜",
+            "target": "八角",
+            "value": 3
+        },
+        {
+            "relation": "选材",
+            "source": "红烧排骨胡萝卜",
+            "target": "蒜",
+            "value": 3
+        },
+        {
+            "relation": "选材",
+            "source": "红烧排骨胡萝卜",
+            "target": "料酒",
+            "value": 3
+        },
+        {
+            "relation": "选材",
+            "source": "红烧排骨胡萝卜",
+            "target": "酱油",
+            "value": 3
+        },
+        {
+            "relation": "选材",
+            "source": "家常红烧排骨",
+            "target": "排骨",
+            "value": 3
+        },
+        {
+            "relation": "选材",
+            "source": "家常红烧排骨",
+            "target": "葱",
+            "value": 3
+        },
+        {
+            "relation": "选材",
+            "source": "家常红烧排骨",
+            "target": "姜",
+            "value": 3
+        },
+        {
+            "relation": "选材",
+            "source": "家常红烧排骨",
+            "target": "蒜",
+            "value": 3
+        },
+        {
+            "relation": "选材",
+            "source": "家常红烧排骨",
+            "target": "大料",
+            "value": 3
+        },
+        {
+            "relation": "选材",
+            "source": "家常红烧排骨",
+            "target": "桂皮",
+            "value": 3
+        },
+        {
+            "relation": "选材",
+            "source": "可乐鸡翅",
+            "target": "鸡翅中",
+            "value": 3
+        },
+        {
+            "relation": "选材",
+            "source": "可乐鸡翅",
+            "target": "可乐",
+            "value": 3
+        },
+        {
+            "relation": "选材",
+            "source": "可乐鸡翅",
+            "target": "八角",
+            "value": 3
+        },
+        {
+            "relation": "选材",
+            "source": "可乐鸡翅",
+            "target": "姜",
+            "value": 3
+        },
+        {
+            "relation": "选材",
+            "source": "可乐鸡翅",
+            "target": "葱",
+            "value": 3
+        },
+        {
+            "relation": "选材",
+            "source": "可乐鸡翅",
+            "target": "料酒",
+            "value": 3
+        },
+        {
+            "relation": "选材",
+            "source": "柠檬可乐鸡翅",
+            "target": "鸡翅中",
+            "value": 3
+        },
+        {
+            "relation": "选材",
+            "source": "柠檬可乐鸡翅",
+            "target": "可乐",
+            "value": 3
+        },
+        {
+            "relation": "选材",
+            "source": "柠檬可乐鸡翅",
+            "target": "柠檬",
+            "value": 3
+        },
+        {
+            "relation": "选材",
+            "source": "柠檬可乐鸡翅",
+            "target": "葱",
+            "value": 3
+        },
+        {
+            "relation": "选材",
+            "source": "柠檬可乐鸡翅",
+            "target": "姜",
+            "value": 3
+        },
+        {
+            "relation": "选材",
+            "source": "柠檬可乐鸡翅",
+            "target": "酱油",
+            "value": 3
+        },
+        {
+            "relation": "选材",
+            "source": "柠檬可乐鸡翅",
+            "target": "料酒",
+            "value": 3
+        },
+        {
+            "relation": "选材",
+            "source": "柠檬可乐鸡翅",
+            "target": "盐",
+            "value": 3
+        },
+        {
+            "relation": "选材",
+            "source": "可乐鸡翅根",
+            "target": "鸡翅根",
+            "value": 3
+        },
+        {
+            "relation": "选材",
+            "source": "可乐鸡翅根",
+            "target": "土豆",
+            "value": 3
+        },
+        {
+            "relation": "选材",
+            "source": "可乐鸡翅根",
+            "target": "可乐",
+            "value": 3
+        },
+        {
+            "relation": "选材",
+            "source": "改良版可乐鸡翅",
+            "target": "鸡翅中",
+            "value": 3
+        },
+        {
+            "relation": "选材",
+            "source": "改良版可乐鸡翅",
+            "target": "可乐",
+            "value": 3
+        },
+        {
+            "relation": "选材",
+            "source": "改良版可乐鸡翅",
+            "target": "圣女果干蜜饯",
+            "value": 3
+        },
+        {
+            "relation": "选材",
+            "source": "改良版可乐鸡翅",
+            "target": "盐",
+            "value": 3
+        },
+        {
+            "relation": "选材",
+            "source": "改良版可乐鸡翅",
+            "target": "鸡精",
+            "value": 3
+        },
+        {
+            "relation": "选材",
+            "source": "改良版可乐鸡翅",
+            "target": "姜",
+            "value": 3
+        },
+        {
+            "relation": "选材",
+            "source": "改良版可乐鸡翅",
+            "target": "料酒",
+            "value": 3
+        },
+        {
+            "relation": "选材",
+            "source": "改良版可乐鸡翅",
+            "target": "生菜",
+            "value": 3
+        },
+        {
+            "relation": "选材",
+            "source": "无油版可乐鸡翅",
+            "target": "鸡翅中",
+            "value": 3
+        },
+        {
+            "relation": "选材",
+            "source": "无油版可乐鸡翅",
+            "target": "可乐",
+            "value": 3
+        },
+        {
+            "relation": "选材",
+            "source": "无油版可乐鸡翅",
+            "target": "姜",
+            "value": 3
+        },
+        {
+            "relation": "选材",
+            "source": "无油版可乐鸡翅",
+            "target": "蒜",
+            "value": 3
+        },
+        {
+            "relation": "选材",
+            "source": "无油版可乐鸡翅",
+            "target": "料酒",
+            "value": 3
+        },
+        {
+            "relation": "选材",
+            "source": "无油版可乐鸡翅",
+            "target": "生抽",
+            "value": 3
+        },
+        {
+            "relation": "选材",
+            "source": "糖醋排骨",
+            "target": "排骨",
+            "value": 3
+        },
+        {
+            "relation": "选材",
+            "source": "糖醋排骨",
+            "target": "姜",
+            "value": 3
+        },
+        {
+            "relation": "选材",
+            "source": "糖醋排骨",
+            "target": "葱",
+            "value": 3
+        },
+        {
+            "relation": "选材",
+            "source": "糖醋排骨",
+            "target": "蒜",
+            "value": 3
+        },
+        {
+            "relation": "选材",
+            "source": "广式糖醋排骨",
+            "target": "排骨",
+            "value": 3
+        },
+        {
+            "relation": "选材",
+            "source": "广式糖醋排骨",
+            "target": "葱",
+            "value": 3
+        },
+        {
+            "relation": "选材",
+            "source": "广式糖醋排骨",
+            "target": "彩椒",
+            "value": 3
+        },
+        {
+            "relation": "选材",
+            "source": "广式糖醋排骨",
+            "target": "黄椒",
+            "value": 3
+        },
+        {
+            "relation": "选材",
+            "source": "广式糖醋排骨",
+            "target": "木瓜",
+            "value": 3
+        },
+        {
+            "relation": "选材",
+            "source": "广式糖醋排骨",
+            "target": "高浓度白酒",
+            "value": 3
+        },
+        {
+            "relation": "选材",
+            "source": "广式糖醋排骨",
+            "target": "蛋黄",
+            "value": 3
+        },
+        {
+            "relation": "选材",
+            "source": "广式糖醋排骨",
+            "target": "盐",
+            "value": 3
+        },
+        {
+            "relation": "选材",
+            "source": "广式糖醋排骨",
+            "target": "生粉",
+            "value": 3
+        },
+        {
+            "relation": "选材",
+            "source": "广式糖醋排骨",
+            "target": "茄汁",
+            "value": 3
+        },
+        {
+            "relation": "选材",
+            "source": "广式糖醋排骨",
+            "target": "糖",
+            "value": 3
+        },
+        {
+            "relation": "选材",
+            "source": "广式糖醋排骨",
+            "target": "鸡汁",
+            "value": 3
+        },
+        {
+            "relation": "选材",
+            "source": "广式糖醋排骨",
+            "target": "醋",
+            "value": 3
+        },
+        {
+            "relation": "选材",
+            "source": "广式糖醋排骨",
+            "target": "老抽",
+            "value": 3
+        },
+        {
+            "relation": "选材",
+            "source": "橙香糖醋排骨",
+            "target": "排骨",
+            "value": 3
+        },
+        {
+            "relation": "选材",
+            "source": "橙香糖醋排骨",
+            "target": "橙子",
+            "value": 3
+        },
+        {
+            "relation": "选材",
+            "source": "橙香糖醋排骨",
+            "target": "葱",
+            "value": 3
+        },
+        {
+            "relation": "选材",
+            "source": "橙香糖醋排骨",
+            "target": "八角",
+            "value": 3
+        },
+        {
+            "relation": "选材",
+            "source": "橙香糖醋排骨",
+            "target": "桂皮",
+            "value": 3
+        },
+        {
+            "relation": "选材",
+            "source": "橙香糖醋排骨",
+            "target": "盐",
+            "value": 3
+        },
+        {
+            "relation": "选材",
+            "source": "橙香糖醋排骨",
+            "target": "糖",
+            "value": 3
+        },
+        {
+            "relation": "选材",
+            "source": "糖醋烤排骨",
+            "target": "排骨",
+            "value": 3
+        },
+        {
+            "relation": "选材",
+            "source": "糖醋烤排骨",
+            "target": "姜",
+            "value": 3
+        },
+        {
+            "relation": "选材",
+            "source": "糖醋烤排骨",
+            "target": "醋",
+            "value": 3
+        },
+        {
+            "relation": "选材",
+            "source": "糖醋烤排骨",
+            "target": "糖",
+            "value": 3
+        },
+        {
+            "relation": "选材",
+            "source": "糖醋烤排骨",
+            "target": "生抽",
+            "value": 3
+        },
+        {
+            "relation": "选材",
+            "source": "糖醋烤排骨",
+            "target": "蚝油",
+            "value": 3
+        },
+        {
+            "relation": "选材",
+            "source": "糖醋烤排骨",
+            "target": "五香粉",
+            "value": 3
+        },
+        {
+            "relation": "选材",
+            "source": "懒人版糖醋排骨",
+            "target": "排骨",
+            "value": 3
+        },
+        {
+            "relation": "选材",
+            "source": "懒人版糖醋排骨",
+            "target": "水",
+            "value": 3
+        },
+        {
+            "relation": "选材",
+            "source": "懒人版糖醋排骨",
+            "target": "料酒",
+            "value": 3
+        },
+        {
+            "relation": "选材",
+            "source": "懒人版糖醋排骨",
+            "target": "糖",
+            "value": 3
+        },
+        {
+            "relation": "选材",
+            "source": "懒人版糖醋排骨",
+            "target": "醋",
+            "value": 3
+        },
+        {
+            "relation": "选材",
+            "source": "懒人版糖醋排骨",
+            "target": "酱油",
+            "value": 3
+        },
+        {
+            "relation": "选材",
+            "source": "麻辣水煮鱼",
+            "target": "草鱼",
+            "value": 3
+        },
+        {
+            "relation": "选材",
+            "source": "麻辣水煮鱼",
+            "target": "黄瓜",
+            "value": 3
+        },
+        {
+            "relation": "选材",
+            "source": "麻辣水煮鱼",
+            "target": "榨菜",
+            "value": 3
+        },
+        {
+            "relation": "选材",
+            "source": "麻辣水煮鱼",
+            "target": "姜",
+            "value": 3
+        },
+        {
+            "relation": "选材",
+            "source": "麻辣水煮鱼",
+            "target": "蒜",
+            "value": 3
+        },
+        {
+            "relation": "选材",
+            "source": "麻辣水煮鱼",
+            "target": "辣椒",
+            "value": 3
+        },
+        {
+            "relation": "选材",
+            "source": "麻辣水煮鱼",
+            "target": "盐",
+            "value": 3
+        },
+        {
+            "relation": "选材",
+            "source": "麻辣水煮鱼",
+            "target": "料酒",
+            "value": 3
+        },
+        {
+            "relation": "选材",
+            "source": "麻辣水煮鱼",
+            "target": "生粉",
+            "value": 3
+        },
+        {
+            "relation": "选材",
+            "source": "麻辣水煮鱼",
+            "target": "蛋清",
+            "value": 3
+        },
+        {
+            "relation": "选材",
+            "source": "麻辣水煮鱼",
+            "target": "德庄水煮鱼调料",
+            "value": 3
+        },
+        {
+            "relation": "选材",
+            "source": "家常水煮鱼",
+            "target": "草鱼",
+            "value": 3
+        },
+        {
+            "relation": "选材",
+            "source": "家常水煮鱼",
+            "target": "豆芽",
+            "value": 3
+        },
+        {
+            "relation": "选材",
+            "source": "家常水煮鱼",
+            "target": "水煮细笋",
+            "value": 3
+        },
+        {
+            "relation": "选材",
+            "source": "家常水煮鱼",
+            "target": "盐",
+            "value": 3
+        },
+        {
+            "relation": "选材",
+            "source": "家常水煮鱼",
+            "target": "糖",
+            "value": 3
+        },
+        {
+            "relation": "选材",
+            "source": "家常水煮鱼",
+            "target": "鸡精",
+            "value": 3
+        },
+        {
+            "relation": "选材",
+            "source": "家常水煮鱼",
+            "target": "料酒",
+            "value": 3
+        },
+        {
+            "relation": "选材",
+            "source": "家常水煮鱼",
+            "target": "胡椒",
+            "value": 3
+        },
+        {
+            "relation": "选材",
+            "source": "小清新版水煮鱼",
+            "target": "鲈鱼",
+            "value": 3
+        },
+        {
+            "relation": "选材",
+            "source": "小清新版水煮鱼",
+            "target": "毛豆籽",
+            "value": 3
+        },
+        {
+            "relation": "选材",
+            "source": "小清新版水煮鱼",
+            "target": "白玉菇",
+            "value": 3
+        },
+        {
+            "relation": "选材",
+            "source": "小清新版水煮鱼",
+            "target": "姜",
+            "value": 3
+        },
+        {
+            "relation": "选材",
+            "source": "小清新版水煮鱼",
+            "target": "葱",
+            "value": 3
+        },
+        {
+            "relation": "选材",
+            "source": "小清新版水煮鱼",
+            "target": "料酒",
+            "value": 3
+        },
+        {
+            "relation": "选材",
+            "source": "小清新版水煮鱼",
+            "target": "蛋白",
+            "value": 3
+        },
+        {
+            "relation": "选材",
+            "source": "小清新版水煮鱼",
+            "target": "盐",
+            "value": 3
+        },
+        {
+            "relation": "选材",
+            "source": "水煮鱼",
+            "target": "草鱼",
+            "value": 3
+        },
+        {
+            "relation": "选材",
+            "source": "水煮鱼",
+            "target": "豆芽",
+            "value": 3
+        },
+        {
+            "relation": "选材",
+            "source": "水煮鱼",
+            "target": "辣椒",
+            "value": 3
+        },
+        {
+            "relation": "选材",
+            "source": "水煮鱼",
+            "target": "花椒",
+            "value": 3
+        },
+        {
+            "relation": "选材",
+            "source": "水煮鱼",
+            "target": "姜",
+            "value": 3
+        },
+        {
+            "relation": "选材",
+            "source": "香辣水煮鱼",
+            "target": "草鱼",
+            "value": 3
+        },
+        {
+            "relation": "选材",
+            "source": "香辣水煮鱼",
+            "target": "豆芽",
+            "value": 3
+        },
+        {
+            "relation": "选材",
+            "source": "香辣水煮鱼",
+            "target": "辣椒",
+            "value": 3
+        },
+        {
+            "relation": "选材",
+            "source": "香辣水煮鱼",
+            "target": "姜",
+            "value": 3
+        },
+        {
+            "relation": "选材",
+            "source": "香辣水煮鱼",
+            "target": "料酒",
+            "value": 3
+        },
+        {
+            "relation": "选材",
+            "source": "香辣水煮鱼",
+            "target": "豆瓣酱",
+            "value": 3
+        },
+        {
+            "relation": "选材",
+            "source": "家常红烧鱼",
+            "target": "海鱼",
+            "value": 3
+        },
+        {
+            "relation": "选材",
+            "source": "家常红烧鱼",
+            "target": "五花肉",
+            "value": 3
+        },
+        {
+            "relation": "选材",
+            "source": "家常红烧鱼",
+            "target": "植物油",
+            "value": 3
+        },
+        {
+            "relation": "选材",
+            "source": "家常红烧鱼",
+            "target": "盐",
+            "value": 3
+        },
+        {
+            "relation": "选材",
+            "source": "家常红烧鱼",
+            "target": "葱",
+            "value": 3
+        },
+        {
+            "relation": "选材",
+            "source": "家常红烧鱼",
+            "target": "姜",
+            "value": 3
+        },
+        {
+            "relation": "选材",
+            "source": "家常红烧鱼",
+            "target": "蒜",
+            "value": 3
+        },
+        {
+            "relation": "选材",
+            "source": "十分钟红烧鱼",
+            "target": "草鱼",
+            "value": 3
+        },
+        {
+            "relation": "选材",
+            "source": "十分钟红烧鱼",
+            "target": "料酒",
+            "value": 3
+        },
+        {
+            "relation": "选材",
+            "source": "十分钟红烧鱼",
+            "target": "生抽",
+            "value": 3
+        },
+        {
+            "relation": "选材",
+            "source": "十分钟红烧鱼",
+            "target": "酱油",
+            "value": 3
+        },
+        {
+            "relation": "选材",
+            "source": "十分钟红烧鱼",
+            "target": "糖",
+            "value": 3
+        },
+        {
+            "relation": "选材",
+            "source": "十分钟红烧鱼",
+            "target": "葱",
+            "value": 3
+        },
+        {
+            "relation": "选材",
+            "source": "十分钟红烧鱼",
+            "target": "姜",
+            "value": 3
+        },
+        {
+            "relation": "选材",
+            "source": "十分钟红烧鱼",
+            "target": "蒜",
+            "value": 3
+        },
+        {
+            "relation": "选材",
+            "source": "十分钟红烧鱼",
+            "target": "油",
+            "value": 3
+        },
+        {
+            "relation": "选材",
+            "source": "十分钟红烧鱼",
+            "target": "盐",
+            "value": 3
+        },
+        {
+            "relation": "选材",
+            "source": "红烧鱼块",
+            "target": "鲤鱼",
+            "value": 3
+        },
+        {
+            "relation": "选材",
+            "source": "红烧鱼块",
+            "target": "料酒",
+            "value": 3
+        },
+        {
+            "relation": "选材",
+            "source": "红烧鱼块",
+            "target": "老抽",
+            "value": 3
+        },
+        {
+            "relation": "选材",
+            "source": "红烧鱼块",
+            "target": "姜",
+            "value": 3
+        },
+        {
+            "relation": "选材",
+            "source": "红烧鱼块",
+            "target": "八角",
+            "value": 3
+        },
+        {
+            "relation": "选材",
+            "source": "红烧鱼块",
+            "target": "盐",
+            "value": 3
+        },
+        {
+            "relation": "选材",
+            "source": "红烧鱼块",
+            "target": "胡椒",
+            "value": 3
+        },
+        {
+            "relation": "选材",
+            "source": "红烧鱼块",
+            "target": "鸡蛋",
+            "value": 3
+        },
+        {
+            "relation": "选材",
+            "source": "红烧鱼块",
+            "target": "葱",
+            "value": 3
+        },
+        {
+            "relation": "选材",
+            "source": "啤酒红烧鱼",
+            "target": "草鱼",
+            "value": 3
+        },
+        {
+            "relation": "选材",
+            "source": "啤酒红烧鱼",
+            "target": "蒜",
+            "value": 3
+        },
+        {
+            "relation": "选材",
+            "source": "啤酒红烧鱼",
+            "target": "啤酒",
+            "value": 3
+        },
+        {
+            "relation": "选材",
+            "source": "啤酒红烧鱼",
+            "target": "料酒",
+            "value": 3
+        },
+        {
+            "relation": "选材",
+            "source": "啤酒红烧鱼",
+            "target": "葱",
+            "value": 3
+        },
+        {
+            "relation": "选材",
+            "source": "啤酒红烧鱼",
+            "target": "姜",
+            "value": 3
+        },
+        {
+            "relation": "选材",
+            "source": "红烧鱼尾",
+            "target": "草鱼尾",
+            "value": 3
+        },
+        {
+            "relation": "选材",
+            "source": "红烧鱼尾",
+            "target": "植物油",
+            "value": 3
+        },
+        {
+            "relation": "选材",
+            "source": "红烧鱼尾",
+            "target": "姜",
+            "value": 3
+        },
+        {
+            "relation": "选材",
+            "source": "红烧鱼尾",
+            "target": "蒜",
+            "value": 3
+        },
+        {
+            "relation": "选材",
+            "source": "红烧鱼尾",
+            "target": "八角",
+            "value": 3
+        },
+        {
+            "relation": "选材",
+            "source": "红烧鱼尾",
+            "target": "料酒",
+            "value": 3
+        },
+        {
+            "relation": "选材",
+            "source": "爽心木耳沙拉",
+            "target": "木耳",
+            "value": 3
+        },
+        {
+            "relation": "选材",
+            "source": "爽心木耳沙拉",
+            "target": "圣女果",
+            "value": 3
+        },
+        {
+            "relation": "选材",
+            "source": "爽心木耳沙拉",
+            "target": "彩椒",
+            "value": 3
+        },
+        {
+            "relation": "选材",
+            "source": "爽心木耳沙拉",
+            "target": "花生",
+            "value": 3
+        },
+        {
+            "relation": "选材",
+            "source": "爽心木耳沙拉",
+            "target": "辣椒",
+            "value": 3
+        },
+        {
+            "relation": "选材",
+            "source": "爽心木耳沙拉",
+            "target": "姜",
+            "value": 3
+        },
+        {
+            "relation": "选材",
+            "source": "爽心木耳沙拉",
+            "target": "花椒",
+            "value": 3
+        },
+        {
+            "relation": "选材",
+            "source": "爽心木耳沙拉",
+            "target": "醋",
+            "value": 3
+        },
+        {
+            "relation": "选材",
+            "source": "爽心木耳沙拉",
+            "target": "生抽",
+            "value": 3
+        },
+        {
+            "relation": "选材",
+            "source": "凉拌木耳",
+            "target": "木耳",
+            "value": 3
+        },
+        {
+            "relation": "选材",
+            "source": "凉拌木耳",
+            "target": "橄榄油",
+            "value": 3
+        },
+        {
+            "relation": "选材",
+            "source": "凉拌木耳",
+            "target": "彩椒",
+            "value": 3
+        },
+        {
+            "relation": "选材",
+            "source": "凉拌木耳",
+            "target": "蒜",
+            "value": 3
+        },
+        {
+            "relation": "选材",
+            "source": "凉拌木耳",
+            "target": "糖",
+            "value": 3
+        },
+        {
+            "relation": "选材",
+            "source": "凉拌木耳",
+            "target": "生抽",
+            "value": 3
+        },
+        {
+            "relation": "选材",
+            "source": "凉拌木耳黄瓜",
+            "target": "黄瓜",
+            "value": 3
+        },
+        {
+            "relation": "选材",
+            "source": "凉拌木耳黄瓜",
+            "target": "鸡精",
+            "value": 3
+        },
+        {
+            "relation": "选材",
+            "source": "凉拌木耳黄瓜",
+            "target": "姜",
+            "value": 3
+        },
+        {
+            "relation": "选材",
+            "source": "凉拌木耳黄瓜",
+            "target": "木耳",
+            "value": 3
+        },
+        {
+            "relation": "选材",
+            "source": "凉拌木耳黄瓜",
+            "target": "酱油",
+            "value": 3
+        },
+        {
+            "relation": "选材",
+            "source": "凉拌木耳黄瓜",
+            "target": "味精",
+            "value": 3
+        },
+        {
+            "relation": "选材",
+            "source": "午餐便当凉拌木耳",
+            "target": "木耳",
+            "value": 3
+        },
+        {
+            "relation": "选材",
+            "source": "午餐便当凉拌木耳",
+            "target": "西红柿",
+            "value": 3
+        },
+        {
+            "relation": "选材",
+            "source": "午餐便当凉拌木耳",
+            "target": "胡萝卜",
+            "value": 3
+        },
+        {
+            "relation": "选材",
+            "source": "午餐便当凉拌木耳",
+            "target": "麻油",
+            "value": 3
+        },
+        {
+            "relation": "选材",
+            "source": "午餐便当凉拌木耳",
+            "target": "盐",
+            "value": 3
+        },
+        {
+            "relation": "选材",
+            "source": "午餐便当凉拌木耳",
+            "target": "生抽",
+            "value": 3
+        },
+        {
+            "relation": "选材",
+            "source": "午餐便当凉拌木耳",
+            "target": "葱",
+            "value": 3
+        },
+        {
+            "relation": "选材",
+            "source": "泡椒黑木耳",
+            "target": "木耳",
+            "value": 3
+        },
+        {
+            "relation": "选材",
+            "source": "泡椒黑木耳",
+            "target": "泡椒",
+            "value": 3
+        },
+        {
+            "relation": "选材",
+            "source": "泡椒黑木耳",
+            "target": "彩椒",
+            "value": 3
+        },
+        {
+            "relation": "选材",
+            "source": "泡椒黑木耳",
+            "target": "糖",
+            "value": 3
+        },
+        {
+            "relation": "选材",
+            "source": "泡椒黑木耳",
+            "target": "盐",
+            "value": 3
+        },
+        {
+            "relation": "选材",
+            "source": "鱼香肉丝",
+            "target": "冬笋",
+            "value": 3
+        },
+        {
+            "relation": "选材",
+            "source": "鱼香肉丝",
+            "target": "里脊肉",
+            "value": 3
+        },
+        {
+            "relation": "选材",
+            "source": "鱼香肉丝",
+            "target": "木耳",
+            "value": 3
+        },
+        {
+            "relation": "选材",
+            "source": "鱼香肉丝",
+            "target": "胡萝卜",
+            "value": 3
+        },
+        {
+            "relation": "选材",
+            "source": "鱼香肉丝",
+            "target": "蒜",
+            "value": 3
+        },
+        {
+            "relation": "选材",
+            "source": "鱼香肉丝",
+            "target": "辣椒",
+            "value": 3
+        },
+        {
+            "relation": "选材",
+            "source": "家庭版鱼香肉丝",
+            "target": "肉丝",
+            "value": 3
+        },
+        {
+            "relation": "选材",
+            "source": "家庭版鱼香肉丝",
+            "target": "笋",
+            "value": 3
+        },
+        {
+            "relation": "选材",
+            "source": "家庭版鱼香肉丝",
+            "target": "香菇",
+            "value": 3
+        },
+        {
+            "relation": "选材",
+            "source": "家庭版鱼香肉丝",
+            "target": "胡萝卜",
+            "value": 3
+        },
+        {
+            "relation": "选材",
+            "source": "家庭版鱼香肉丝",
+            "target": "葱",
+            "value": 3
+        },
+        {
+            "relation": "选材",
+            "source": "家庭版鱼香肉丝",
+            "target": "姜",
+            "value": 3
+        },
+        {
+            "relation": "选材",
+            "source": "家庭版鱼香肉丝",
+            "target": "生抽",
+            "value": 3
+        },
+        {
+            "relation": "选材",
+            "source": "家庭版鱼香肉丝",
+            "target": "郫县豆瓣",
+            "value": 3
+        },
+        {
+            "relation": "选材",
+            "source": "家庭版鱼香肉丝",
+            "target": "彩椒",
+            "value": 3
+        },
+        {
+            "relation": "选材",
+            "source": "家庭版鱼香肉丝",
+            "target": "盐",
+            "value": 3
+        },
+        {
+            "relation": "选材",
+            "source": "家庭版鱼香肉丝",
+            "target": "味精",
+            "value": 3
+        },
+        {
+            "relation": "选材",
+            "source": "素鱼香肉丝",
+            "target": "素肉丝",
+            "value": 3
+        },
+        {
+            "relation": "选材",
+            "source": "素鱼香肉丝",
+            "target": "木耳",
+            "value": 3
+        },
+        {
+            "relation": "选材",
+            "source": "素鱼香肉丝",
+            "target": "胡萝卜",
+            "value": 3
+        },
+        {
+            "relation": "选材",
+            "source": "素鱼香肉丝",
+            "target": "彩椒",
+            "value": 3
+        },
+        {
+            "relation": "选材",
+            "source": "素鱼香肉丝",
+            "target": "土豆",
+            "value": 3
+        },
+        {
+            "relation": "选材",
+            "source": "素鱼香肉丝",
+            "target": "湿淀粉",
+            "value": 3
+        },
+        {
+            "relation": "选材",
+            "source": "素鱼香肉丝",
+            "target": "油",
+            "value": 3
+        },
+        {
+            "relation": "选材",
+            "source": "素鱼香肉丝",
+            "target": "酱油",
+            "value": 3
+        },
+        {
+            "relation": "选材",
+            "source": "素鱼香肉丝",
+            "target": "醋",
+            "value": 3
+        },
+        {
+            "relation": "选材",
+            "source": "素鱼香肉丝",
+            "target": "糖",
+            "value": 3
+        },
+        {
+            "relation": "选材",
+            "source": "素鱼香肉丝",
+            "target": "豆瓣酱",
+            "value": 3
+        },
+        {
+            "relation": "选材",
+            "source": "家常版鱼香肉丝",
+            "target": "瘦肉",
+            "value": 3
+        },
+        {
+            "relation": "选材",
+            "source": "家常版鱼香肉丝",
+            "target": "尖椒",
+            "value": 3
+        },
+        {
+            "relation": "选材",
+            "source": "家常版鱼香肉丝",
+            "target": "胡萝卜",
+            "value": 3
+        },
+        {
+            "relation": "选材",
+            "source": "家常版鱼香肉丝",
+            "target": "葱",
+            "value": 3
+        },
+        {
+            "relation": "选材",
+            "source": "家常版鱼香肉丝",
+            "target": "豆瓣酱",
+            "value": 3
+        },
+        {
+            "relation": "选材",
+            "source": "家常版鱼香肉丝",
+            "target": "糖",
+            "value": 3
+        },
+        {
+            "relation": "选材",
+            "source": "家常鱼香肉丝",
+            "target": "猪肉",
+            "value": 3
+        },
+        {
+            "relation": "选材",
+            "source": "家常鱼香肉丝",
+            "target": "木耳",
+            "value": 3
+        },
+        {
+            "relation": "选材",
+            "source": "家常鱼香肉丝",
+            "target": "胡萝卜丝",
+            "value": 3
+        },
+        {
+            "relation": "选材",
+            "source": "家常鱼香肉丝",
+            "target": "酒",
+            "value": 3
+        },
+        {
+            "relation": "选材",
+            "source": "家常鱼香肉丝",
+            "target": "生抽",
+            "value": 3
+        },
+        {
+            "relation": "选材",
+            "source": "家常鱼香肉丝",
+            "target": "糖",
+            "value": 3
+        },
+        {
+            "relation": "选材",
+            "source": "家常鱼香肉丝",
+            "target": "醋",
+            "value": 3
+        },
+        {
+            "relation": "选材",
+            "source": "家常鱼香肉丝",
+            "target": "水",
+            "value": 3
+        },
+        {
+            "relation": "选材",
+            "source": "水煮肉片",
+            "target": "里脊肉",
+            "value": 3
+        },
+        {
+            "relation": "选材",
+            "source": "水煮肉片",
+            "target": "油菜",
+            "value": 3
+        },
+        {
+            "relation": "选材",
+            "source": "水煮肉片",
+            "target": "金针菇",
+            "value": 3
+        },
+        {
+            "relation": "选材",
+            "source": "水煮肉片",
+            "target": "豆芽",
+            "value": 3
+        },
+        {
+            "relation": "选材",
+            "source": "水煮肉片",
+            "target": "豆瓣酱",
+            "value": 3
+        },
+        {
+            "relation": "选材",
+            "source": "水煮肉片",
+            "target": "蒜",
+            "value": 3
+        },
+        {
+            "relation": "选材",
+            "source": "水煮肉片",
+            "target": "姜",
+            "value": 3
+        },
+        {
+            "relation": "选材",
+            "source": "水煮肉片",
+            "target": "麻椒",
+            "value": 3
+        },
+        {
+            "relation": "选材",
+            "source": "水煮肉片",
+            "target": "辣椒",
+            "value": 3
+        },
+        {
+            "relation": "选材",
+            "source": "私房水煮肉片",
+            "target": "里脊肉",
+            "value": 3
+        },
+        {
+            "relation": "选材",
+            "source": "私房水煮肉片",
+            "target": "青菜",
+            "value": 3
+        },
+        {
+            "relation": "选材",
+            "source": "私房水煮肉片",
+            "target": "莴笋",
+            "value": 3
+        },
+        {
+            "relation": "选材",
+            "source": "私房水煮肉片",
+            "target": "火腿",
+            "value": 3
+        },
+        {
+            "relation": "选材",
+            "source": "私房水煮肉片",
+            "target": "蘑菇",
+            "value": 3
+        },
+        {
+            "relation": "选材",
+            "source": "私房水煮肉片",
+            "target": "豆芽",
+            "value": 3
+        },
+        {
+            "relation": "选材",
+            "source": "私房水煮肉片",
+            "target": "豆瓣酱",
+            "value": 3
+        },
+        {
+            "relation": "选材",
+            "source": "私房水煮肉片",
+            "target": "豆豉",
+            "value": 3
+        },
+        {
+            "relation": "选材",
+            "source": "私房水煮肉片",
+            "target": "浓汤宝",
+            "value": 3
+        },
+        {
+            "relation": "选材",
+            "source": "私房水煮肉片",
+            "target": "辣椒",
+            "value": 3
+        },
+        {
+            "relation": "选材",
+            "source": "私房水煮肉片",
+            "target": "花椒",
+            "value": 3
+        },
+        {
+            "relation": "选材",
+            "source": "水煮牛肉片",
+            "target": "牛肉",
+            "value": 3
+        },
+        {
+            "relation": "选材",
+            "source": "水煮牛肉片",
+            "target": "豆芽",
+            "value": 3
+        },
+        {
+            "relation": "选材",
+            "source": "水煮牛肉片",
+            "target": "香菜",
+            "value": 3
+        },
+        {
+            "relation": "选材",
+            "source": "水煮牛肉片",
+            "target": "盐",
+            "value": 3
+        },
+        {
+            "relation": "选材",
+            "source": "水煮牛肉片",
+            "target": "鸡精",
+            "value": 3
+        },
+        {
+            "relation": "选材",
+            "source": "水煮牛肉片",
+            "target": "地瓜粉",
+            "value": 3
+        },
+        {
+            "relation": "选材",
+            "source": "水煮牛肉片",
+            "target": "豆瓣酱",
+            "value": 3
+        },
+        {
+            "relation": "选材",
+            "source": "水煮牛肉片",
+            "target": "姜",
+            "value": 3
+        },
+        {
+            "relation": "选材",
+            "source": "家常水煮肉片",
+            "target": "里脊肉",
+            "value": 3
+        },
+        {
+            "relation": "选材",
+            "source": "家常水煮肉片",
+            "target": "娃娃菜",
+            "value": 3
+        },
+        {
+            "relation": "选材",
+            "source": "家常水煮肉片",
+            "target": "彩椒",
+            "value": 3
+        },
+        {
+            "relation": "选材",
+            "source": "家常水煮肉片",
+            "target": "姜",
+            "value": 3
+        },
+        {
+            "relation": "选材",
+            "source": "家常水煮肉片",
+            "target": "葱",
+            "value": 3
+        },
+        {
+            "relation": "选材",
+            "source": "家常水煮肉片",
+            "target": "辣椒",
+            "value": 3
+        },
+        {
+            "relation": "选材",
+            "source": "家常水煮肉片",
+            "target": "老抽",
+            "value": 3
+        },
+        {
+            "relation": "选材",
+            "source": "家常水煮肉片",
+            "target": "盐",
+            "value": 3
+        },
+        {
+            "relation": "选材",
+            "source": "家常水煮肉片",
+            "target": "红油豆瓣",
+            "value": 3
+        },
+        {
+            "relation": "选材",
+            "source": "家常水煮肉片",
+            "target": "料酒",
+            "value": 3
+        },
+        {
+            "relation": "选材",
+            "source": "家常水煮肉片",
+            "target": "干淀粉",
+            "value": 3
+        },
+        {
+            "relation": "选材",
+            "source": "麻辣水煮肉片",
+            "target": "猪肉",
+            "value": 3
+        },
+        {
+            "relation": "选材",
+            "source": "麻辣水煮肉片",
+            "target": "水青菜",
+            "value": 3
+        },
+        {
+            "relation": "选材",
+            "source": "麻辣水煮肉片",
+            "target": "辣椒",
+            "value": 3
+        },
+        {
+            "relation": "选材",
+            "source": "麻辣水煮肉片",
+            "target": "花椒",
+            "value": 3
+        },
+        {
+            "relation": "选材",
+            "source": "麻辣水煮肉片",
+            "target": "葱",
+            "value": 3
+        },
+        {
+            "relation": "选材",
+            "source": "麻辣水煮肉片",
+            "target": "肉汤或水",
+            "value": 3
+        },
+        {
+            "relation": "选材",
+            "source": "麻辣水煮肉片",
+            "target": "豆瓣酱",
+            "value": 3
+        },
+        {
+            "relation": "选材",
+            "source": "麻辣水煮肉片",
+            "target": "酱油",
+            "value": 3
+        },
+        {
+            "relation": "选材",
+            "source": "麻辣水煮肉片",
+            "target": "料酒",
+            "value": 3
+        },
+        {
+            "relation": "选材",
+            "source": "麻辣水煮肉片",
+            "target": "淀粉",
+            "value": 3
+        },
+        {
+            "relation": "选材",
+            "source": "麻辣水煮肉片",
+            "target": "盐",
+            "value": 3
+        },
+        {
+            "relation": "选材",
+            "source": "蕃茄火腿意面",
+            "target": "意大利面",
+            "value": 3
+        },
+        {
+            "relation": "选材",
+            "source": "蕃茄火腿意面",
+            "target": "火腿",
+            "value": 3
+        },
+        {
+            "relation": "选材",
+            "source": "蕃茄火腿意面",
+            "target": "蕃茄",
+            "value": 3
+        },
+        {
+            "relation": "选材",
+            "source": "蕃茄火腿意面",
+            "target": "蕃茄酱",
+            "value": 3
+        },
+        {
+            "relation": "选材",
+            "source": "蕃茄火腿意面",
+            "target": "蒜",
+            "value": 3
+        },
+        {
+            "relation": "选材",
+            "source": "蕃茄火腿意面",
+            "target": "西兰花",
+            "value": 3
+        },
+        {
+            "relation": "选材",
+            "source": "蕃茄火腿意面",
+            "target": "胡椒",
+            "value": 3
+        },
+        {
+            "relation": "选材",
+            "source": "海鲜意面",
+            "target": "意大利面",
+            "value": 3
+        },
+        {
+            "relation": "选材",
+            "source": "海鲜意面",
+            "target": "虾",
+            "value": 3
+        },
+        {
+            "relation": "选材",
+            "source": "海鲜意面",
+            "target": "鱿鱼",
+            "value": 3
+        },
+        {
+            "relation": "选材",
+            "source": "海鲜意面",
+            "target": "西兰花",
+            "value": 3
+        },
+        {
+            "relation": "选材",
+            "source": "海鲜意面",
+            "target": "圣女果",
+            "value": 3
+        },
+        {
+            "relation": "选材",
+            "source": "海鲜意面",
+            "target": "盐",
+            "value": 3
+        },
+        {
+            "relation": "选材",
+            "source": "海鲜意面",
+            "target": "罗勒",
+            "value": 3
+        },
+        {
+            "relation": "选材",
+            "source": "海鲜意面",
+            "target": "胡椒",
+            "value": 3
+        },
+        {
+            "relation": "选材",
+            "source": "海鲜意面",
+            "target": "橄榄油",
+            "value": 3
+        },
+        {
+            "relation": "选材",
+            "source": "香椿意面",
+            "target": "意大利面",
+            "value": 3
+        },
+        {
+            "relation": "选材",
+            "source": "香椿意面",
+            "target": "香椿",
+            "value": 3
+        },
+        {
+            "relation": "选材",
+            "source": "香椿意面",
+            "target": "小番茄",
+            "value": 3
+        },
+        {
+            "relation": "选材",
+            "source": "香椿意面",
+            "target": "腰果",
+            "value": 3
+        },
+        {
+            "relation": "选材",
+            "source": "香椿意面",
+            "target": "亚麻籽",
+            "value": 3
+        },
+        {
+            "relation": "选材",
+            "source": "香椿意面",
+            "target": "薄荷叶",
+            "value": 3
+        },
+        {
+            "relation": "选材",
+            "source": "牛油果酱海鲜意面",
+            "target": "意大利面",
+            "value": 3
+        },
+        {
+            "relation": "选材",
+            "source": "牛油果酱海鲜意面",
+            "target": "牛油果",
+            "value": 3
+        },
+        {
+            "relation": "选材",
+            "source": "牛油果酱海鲜意面",
+            "target": "虾仁",
+            "value": 3
+        },
+        {
+            "relation": "选材",
+            "source": "牛油果酱海鲜意面",
+            "target": "蟹柳",
+            "value": 3
+        },
+        {
+            "relation": "选材",
+            "source": "牛油果酱海鲜意面",
+            "target": "柠檬汁",
+            "value": 3
+        },
+        {
+            "relation": "选材",
+            "source": "牛油果酱海鲜意面",
+            "target": "牛奶",
+            "value": 3
+        },
+        {
+            "relation": "选材",
+            "source": "牛油果酱海鲜意面",
+            "target": "培根",
+            "value": 3
+        },
+        {
+            "relation": "选材",
+            "source": "牛油果酱海鲜意面",
+            "target": "蒜",
+            "value": 3
+        },
+        {
+            "relation": "选材",
+            "source": "牛油果酱海鲜意面",
+            "target": "胡椒",
+            "value": 3
+        },
+        {
+            "relation": "选材",
+            "source": "茄汁培根炒意面",
+            "target": "意大利面",
+            "value": 3
+        },
+        {
+            "relation": "选材",
+            "source": "茄汁培根炒意面",
+            "target": "培根",
+            "value": 3
+        },
+        {
+            "relation": "选材",
+            "source": "茄汁培根炒意面",
+            "target": "番茄",
+            "value": 3
+        },
+        {
+            "relation": "选材",
+            "source": "茄汁培根炒意面",
+            "target": "胡萝卜",
+            "value": 3
+        },
+        {
+            "relation": "选材",
+            "source": "茄汁培根炒意面",
+            "target": "葱",
+            "value": 3
+        },
+        {
+            "relation": "选材",
+            "source": "茄汁培根炒意面",
+            "target": "糖",
+            "value": 3
+        },
+        {
+            "relation": "选材",
+            "source": "茄汁培根炒意面",
+            "target": "盐",
+            "value": 3
+        },
+        {
+            "relation": "属于",
+            "source": "1-红烧肉类",
+            "target": "元宝红烧肉",
+            "value": 3
+        },
+        {
+            "relation": "属于",
+            "source": "1-红烧肉类",
+            "target": "山楂红烧肉",
+            "value": 3
+        },
+        {
+            "relation": "属于",
+            "source": "1-红烧肉类",
+            "target": "栗子红烧肉",
+            "value": 3
+        },
+        {
+            "relation": "属于",
+            "source": "1-红烧肉类",
+            "target": "桂香红烧肉",
+            "value": 3
+        },
+        {
+            "relation": "属于",
+            "source": "1-红烧肉类",
+            "target": "冻豆腐红烧肉",
+            "value": 3
+        },
+        {
+            "relation": "属于",
+            "source": "2-红烧排骨类",
+            "target": "红烧排骨",
+            "value": 3
+        },
+        {
+            "relation": "属于",
+            "source": "2-红烧排骨类",
+            "target": "无酱油版红烧排骨",
+            "value": 3
+        },
+        {
+            "relation": "属于",
+            "source": "2-红烧排骨类",
+            "target": "秘制红烧排骨",
+            "value": 3
+        },
+        {
+            "relation": "属于",
+            "source": "2-红烧排骨类",
+            "target": "红烧排骨胡萝卜",
+            "value": 3
+        },
+        {
+            "relation": "属于",
+            "source": "2-红烧排骨类",
+            "target": "家常红烧排骨",
+            "value": 3
+        },
+        {
+            "relation": "属于",
+            "source": "3-可乐鸡翅类",
+            "target": "可乐鸡翅",
+            "value": 3
+        },
+        {
+            "relation": "属于",
+            "source": "3-可乐鸡翅类",
+            "target": "柠檬可乐鸡翅",
+            "value": 3
+        },
+        {
+            "relation": "属于",
+            "source": "3-可乐鸡翅类",
+            "target": "可乐鸡翅根",
+            "value": 3
+        },
+        {
+            "relation": "属于",
+            "source": "3-可乐鸡翅类",
+            "target": "改良版可乐鸡翅",
+            "value": 3
+        },
+        {
+            "relation": "属于",
+            "source": "3-可乐鸡翅类",
+            "target": "无油版可乐鸡翅",
+            "value": 3
+        },
+        {
+            "relation": "属于",
+            "source": "4-糖醋排骨类",
+            "target": "糖醋排骨",
+            "value": 3
+        },
+        {
+            "relation": "属于",
+            "source": "4-糖醋排骨类",
+            "target": "广式糖醋排骨",
+            "value": 3
+        },
+        {
+            "relation": "属于",
+            "source": "4-糖醋排骨类",
+            "target": "橙香糖醋排骨",
+            "value": 3
+        },
+        {
+            "relation": "属于",
+            "source": "4-糖醋排骨类",
+            "target": "糖醋烤排骨",
+            "value": 3
+        },
+        {
+            "relation": "属于",
+            "source": "4-糖醋排骨类",
+            "target": "懒人版糖醋排骨",
+            "value": 3
+        },
+        {
+            "relation": "属于",
+            "source": "5-水煮鱼类",
+            "target": "麻辣水煮鱼",
+            "value": 3
+        },
+        {
+            "relation": "属于",
+            "source": "5-水煮鱼类",
+            "target": "家常水煮鱼",
+            "value": 3
+        },
+        {
+            "relation": "属于",
+            "source": "5-水煮鱼类",
+            "target": "小清新版水煮鱼",
+            "value": 3
+        },
+        {
+            "relation": "属于",
+            "source": "5-水煮鱼类",
+            "target": "水煮鱼",
+            "value": 3
+        },
+        {
+            "relation": "属于",
+            "source": "5-水煮鱼类",
+            "target": "香辣水煮鱼",
+            "value": 3
+        },
+        {
+            "relation": "属于",
+            "source": "6-红烧鱼类",
+            "target": "家常红烧鱼",
+            "value": 3
+        },
+        {
+            "relation": "属于",
+            "source": "6-红烧鱼类",
+            "target": "十分钟红烧鱼",
+            "value": 3
+        },
+        {
+            "relation": "属于",
+            "source": "6-红烧鱼类",
+            "target": "红烧鱼块",
+            "value": 3
+        },
+        {
+            "relation": "属于",
+            "source": "6-红烧鱼类",
+            "target": "啤酒红烧鱼",
+            "value": 3
+        },
+        {
+            "relation": "属于",
+            "source": "6-红烧鱼类",
+            "target": "红烧鱼尾",
+            "value": 3
+        },
+        {
+            "relation": "属于",
+            "source": "7-凉拌黑木耳类",
+            "target": "爽心木耳沙拉",
+            "value": 3
+        },
+        {
+            "relation": "属于",
+            "source": "7-凉拌黑木耳类",
+            "target": "凉拌木耳",
+            "value": 3
+        },
+        {
+            "relation": "属于",
+            "source": "7-凉拌黑木耳类",
+            "target": "凉拌木耳黄瓜",
+            "value": 3
+        },
+        {
+            "relation": "属于",
+            "source": "7-凉拌黑木耳类",
+            "target": "午餐便当凉拌木耳",
+            "value": 3
+        },
+        {
+            "relation": "属于",
+            "source": "7-凉拌黑木耳类",
+            "target": "泡椒黑木耳",
+            "value": 3
+        },
+        {
+            "relation": "属于",
+            "source": "8-鱼香肉丝类",
+            "target": "鱼香肉丝",
+            "value": 3
+        },
+        {
+            "relation": "属于",
+            "source": "8-鱼香肉丝类",
+            "target": "家庭版鱼香肉丝",
+            "value": 3
+        },
+        {
+            "relation": "属于",
+            "source": "8-鱼香肉丝类",
+            "target": "素鱼香肉丝",
+            "value": 3
+        },
+        {
+            "relation": "属于",
+            "source": "8-鱼香肉丝类",
+            "target": "家常版鱼香肉丝",
+            "value": 3
+        },
+        {
+            "relation": "属于",
+            "source": "8-鱼香肉丝类",
+            "target": "家常鱼香肉丝",
+            "value": 3
+        },
+        {
+            "relation": "属于",
+            "source": "9-水煮肉片类",
+            "target": "水煮肉片",
+            "value": 3
+        },
+        {
+            "relation": "属于",
+            "source": "9-水煮肉片类",
+            "target": "私房水煮肉片",
+            "value": 3
+        },
+        {
+            "relation": "属于",
+            "source": "9-水煮肉片类",
+            "target": "水煮牛肉片",
+            "value": 3
+        },
+        {
+            "relation": "属于",
+            "source": "9-水煮肉片类",
+            "target": "家常水煮肉片",
+            "value": 3
+        },
+        {
+            "relation": "属于",
+            "source": "9-水煮肉片类",
+            "target": "麻辣水煮肉片",
+            "value": 3
+        },
+        {
+            "relation": "属于",
+            "source": "10-意大利面类",
+            "target": "蕃茄火腿意面",
+            "value": 3
+        },
+        {
+            "relation": "属于",
+            "source": "10-意大利面类",
+            "target": "海鲜意面",
+            "value": 3
+        },
+        {
+            "relation": "属于",
+            "source": "10-意大利面类",
+            "target": "香椿意面",
+            "value": 3
+        },
+        {
+            "relation": "属于",
+            "source": "10-意大利面类",
+            "target": "牛油果酱海鲜意面",
+            "value": 3
+        },
+        {
+            "relation": "属于",
+            "source": "10-意大利面类",
+            "target": "茄汁培根炒意面",
+            "value": 3
+        }
+    ],
+    "nodes": [
+        {
+            "class": "精品特色菜",
+            "group": "1",
+            "id": "麻辣水煮肉片",
+            "size": "10"
+        },
+        {
+            "class": "精品特色菜",
+            "group": "1",
+            "id": "可乐鸡翅",
+            "size": "10"
+        },
+        {
+            "class": "精品特色菜",
+            "group": "1",
+            "id": "元宝红烧肉",
+            "size": "10"
+        },
+        {
+            "class": "精品特色菜",
+            "group": "1",
+            "id": "家常红烧鱼",
+            "size": "10"
+        },
+        {
+            "class": "精品特色菜",
+            "group": "1",
+            "id": "无酱油版红烧排骨",
+            "size": "10"
+        },
+        {
+            "class": "精品特色菜",
+            "group": "1",
+            "id": "柠檬可乐鸡翅",
+            "size": "10"
+        },
+        {
+            "class": "精品特色菜",
+            "group": "1",
+            "id": "小清新版水煮鱼",
+            "size": "10"
+        },
+        {
+            "class": "精品特色菜",
+            "group": "1",
+            "id": "家常红烧排骨",
+            "size": "10"
+        },
+        {
+            "class": "精品特色菜",
+            "group": "1",
+            "id": "水煮牛肉片",
+            "size": "10"
+        },
+        {
+            "class": "精品特色菜",
+            "group": "1",
+            "id": "蕃茄火腿意面",
+            "size": "10"
+        },
+        {
+            "class": "精品特色菜",
+            "group": "1",
+            "id": "广式糖醋排骨",
+            "size": "10"
+        },
+        {
+            "class": "精品特色菜",
+            "group": "1",
+            "id": "十分钟红烧鱼",
+            "size": "10"
+        },
+        {
+            "class": "精品特色菜",
+            "group": "1",
+            "id": "红烧鱼尾",
+            "size": "10"
+        },
+        {
+            "class": "精品特色菜",
+            "group": "1",
+            "id": "可乐鸡翅根",
+            "size": "10"
+        },
+        {
+            "class": "精品特色菜",
+            "group": "1",
+            "id": "糖醋排骨",
+            "size": "10"
+        },
+        {
+            "class": "精品特色菜",
+            "group": "1",
+            "id": "牛油果酱海鲜意面",
+            "size": "10"
+        },
+        {
+            "class": "精品特色菜",
+            "group": "1",
+            "id": "山楂红烧肉",
+            "size": "10"
+        },
+        {
+            "class": "精品特色菜",
+            "group": "1",
+            "id": "桂香红烧肉",
+            "size": "10"
+        },
+        {
+            "class": "精品特色菜",
+            "group": "1",
+            "id": "懒人版糖醋排骨",
+            "size": "10"
+        },
+        {
+            "class": "精品特色菜",
+            "group": "1",
+            "id": "鱼香肉丝",
+            "size": "10"
+        },
+        {
+            "class": "精品特色菜",
+            "group": "1",
+            "id": "栗子红烧肉",
+            "size": "10"
+        },
+        {
+            "class": "精品特色菜",
+            "group": "1",
+            "id": "秘制红烧排骨",
+            "size": "10"
+        },
+        {
+            "class": "精品特色菜",
+            "group": "1",
+            "id": "香辣水煮鱼",
+            "size": "10"
+        },
+        {
+            "class": "精品特色菜",
+            "group": "1",
+            "id": "家常版鱼香肉丝",
+            "size": "10"
+        },
+        {
+            "class": "精品特色菜",
+            "group": "1",
+            "id": "泡椒黑木耳",
+            "size": "10"
+        },
+        {
+            "class": "精品特色菜",
+            "group": "1",
+            "id": "啤酒红烧鱼",
+            "size": "10"
+        },
+        {
+            "class": "精品特色菜",
+            "group": "1",
+            "id": "茄汁培根炒意面",
+            "size": "10"
+        },
+        {
+            "class": "精品特色菜",
+            "group": "1",
+            "id": "海鲜意面",
+            "size": "10"
+        },
+        {
+            "class": "精品特色菜",
+            "group": "1",
+            "id": "家常水煮肉片",
+            "size": "10"
+        },
+        {
+            "class": "精品特色菜",
+            "group": "1",
+            "id": "家常鱼香肉丝",
+            "size": "10"
+        },
+        {
+            "class": "精品特色菜",
+            "group": "1",
+            "id": "红烧排骨胡萝卜",
+            "size": "10"
+        },
+        {
+            "class": "精品特色菜",
+            "group": "1",
+            "id": "改良版可乐鸡翅",
+            "size": "10"
+        },
+        {
+            "class": "精品特色菜",
+            "group": "1",
+            "id": "凉拌木耳黄瓜",
+            "size": "10"
+        },
+        {
+            "class": "精品特色菜",
+            "group": "1",
+            "id": "麻辣水煮鱼",
+            "size": "10"
+        },
+        {
+            "class": "精品特色菜",
+            "group": "1",
+            "id": "凉拌木耳",
+            "size": "10"
+        },
+        {
+            "class": "精品特色菜",
+            "group": "1",
+            "id": "素鱼香肉丝",
+            "size": "10"
+        },
+        {
+            "class": "精品特色菜",
+            "group": "1",
+            "id": "糖醋烤排骨",
+            "size": "10"
+        },
+        {
+            "class": "精品特色菜",
+            "group": "1",
+            "id": "红烧排骨",
+            "size": "10"
+        },
+        {
+            "class": "精品特色菜",
+            "group": "1",
+            "id": "午餐便当凉拌木耳",
+            "size": "10"
+        },
+        {
+            "class": "精品特色菜",
+            "group": "1",
+            "id": "私房水煮肉片",
+            "size": "10"
+        },
+        {
+            "class": "精品特色菜",
+            "group": "1",
+            "id": "水煮肉片",
+            "size": "10"
+        },
+        {
+            "class": "精品特色菜",
+            "group": "1",
+            "id": "水煮鱼",
+            "size": "10"
+        },
+        {
+            "class": "精品特色菜",
+            "group": "1",
+            "id": "香椿意面",
+            "size": "10"
+        },
+        {
+            "class": "精品特色菜",
+            "group": "1",
+            "id": "无油版可乐鸡翅",
+            "size": "10"
+        },
+        {
+            "class": "精品特色菜",
+            "group": "1",
+            "id": "家常水煮鱼",
+            "size": "10"
+        },
+        {
+            "class": "精品特色菜",
+            "group": "1",
+            "id": "橙香糖醋排骨",
+            "size": "10"
+        },
+        {
+            "class": "精品特色菜",
+            "group": "1",
+            "id": "冻豆腐红烧肉",
+            "size": "10"
+        },
+        {
+            "class": "精品特色菜",
+            "group": "1",
+            "id": "家庭版鱼香肉丝",
+            "size": "10"
+        },
+        {
+            "class": "精品特色菜",
+            "group": "1",
+            "id": "红烧鱼块",
+            "size": "10"
+        },
+        {
+            "class": "精品特色菜",
+            "group": "1",
+            "id": "爽心木耳沙拉",
+            "size": "10"
+        },
+        {
+            "class": "原料",
+            "group": "2",
+            "id": "彩椒",
+            "size": "8"
+        },
+        {
+            "class": "原料",
+            "group": "2",
+            "id": "豆豉",
+            "size": "8"
+        },
+        {
+            "class": "原料",
+            "group": "2",
+            "id": "姜",
+            "size": "8"
+        },
+        {
+            "class": "原料",
+            "group": "2",
+            "id": "冻豆腐",
+            "size": "8"
+        },
+        {
+            "class": "原料",
+            "group": "2",
+            "id": "木耳",
+            "size": "8"
+        },
+        {
+            "class": "原料",
+            "group": "2",
+            "id": "泡椒",
+            "size": "8"
+        },
+        {
+            "class": "原料",
+            "group": "2",
+            "id": "蟹柳",
+            "size": "8"
+        },
+        {
+            "class": "原料",
+            "group": "2",
+            "id": "蛋白",
+            "size": "8"
+        },
+        {
+            "class": "原料",
+            "group": "2",
+            "id": "大料",
+            "size": "8"
+        },
+        {
+            "class": "原料",
+            "group": "2",
+            "id": "番茄",
+            "size": "8"
+        },
+        {
+            "class": "原料",
+            "group": "2",
+            "id": "蚝油",
+            "size": "8"
+        },
+        {
+            "class": "原料",
+            "group": "2",
+            "id": "葱",
+            "size": "8"
+        },
+        {
+            "class": "原料",
+            "group": "2",
+            "id": "排骨",
+            "size": "8"
+        },
+        {
+            "class": "原料",
+            "group": "2",
+            "id": "料酒",
+            "size": "8"
+        },
+        {
+            "class": "原料",
+            "group": "2",
+            "id": "糖",
+            "size": "8"
+        },
+        {
+            "class": "原料",
+            "group": "2",
+            "id": "蛋清",
+            "size": "8"
+        },
+        {
+            "class": "原料",
+            "group": "2",
+            "id": "味精",
+            "size": "8"
+        },
+        {
+            "class": "原料",
+            "group": "2",
+            "id": "酒",
+            "size": "8"
+        },
+        {
+            "class": "原料",
+            "group": "2",
+            "id": "柠檬汁",
+            "size": "8"
+        },
+        {
+            "class": "原料",
+            "group": "2",
+            "id": "德庄水煮鱼调料",
+            "size": "8"
+        },
+        {
+            "class": "原料",
+            "group": "2",
+            "id": "淀粉",
+            "size": "8"
+        },
+        {
+            "class": "原料",
+            "group": "2",
+            "id": "胡萝卜",
+            "size": "8"
+        },
+        {
+            "class": "原料",
+            "group": "2",
+            "id": "柠檬",
+            "size": "8"
+        },
+        {
+            "class": "原料",
+            "group": "2",
+            "id": "牛肉",
+            "size": "8"
+        },
+        {
+            "class": "原料",
+            "group": "2",
+            "id": "毛豆籽",
+            "size": "8"
+        },
+        {
+            "class": "原料",
+            "group": "2",
+            "id": "小番茄",
+            "size": "8"
+        },
+        {
+            "class": "原料",
+            "group": "2",
+            "id": "板栗",
+            "size": "8"
+        },
+        {
+            "class": "原料",
+            "group": "2",
+            "id": "草鱼",
+            "size": "8"
+        },
+        {
+            "class": "原料",
+            "group": "2",
+            "id": "意大利面",
+            "size": "8"
+        },
+        {
+            "class": "原料",
+            "group": "2",
+            "id": "五花肉",
+            "size": "8"
+        },
+        {
+            "class": "原料",
+            "group": "2",
+            "id": "湿淀粉",
+            "size": "8"
+        },
+        {
+            "class": "原料",
+            "group": "2",
+            "id": "花椒",
+            "size": "8"
+        },
+        {
+            "class": "原料",
+            "group": "2",
+            "id": "辣椒",
+            "size": "8"
+        },
+        {
+            "class": "原料",
+            "group": "2",
+            "id": "蕃茄",
+            "size": "8"
+        },
+        {
+            "class": "原料",
+            "group": "2",
+            "id": "蘑菇",
+            "size": "8"
+        },
+        {
+            "class": "原料",
+            "group": "2",
+            "id": "干淀粉",
+            "size": "8"
+        },
+        {
+            "class": "原料",
+            "group": "2",
+            "id": "豆瓣酱",
+            "size": "8"
+        },
+        {
+            "class": "原料",
+            "group": "2",
+            "id": "盐",
+            "size": "8"
+        },
+        {
+            "class": "原料",
+            "group": "2",
+            "id": "娃娃菜",
+            "size": "8"
+        },
+        {
+            "class": "原料",
+            "group": "2",
+            "id": "鸡翅中",
+            "size": "8"
+        },
+        {
+            "class": "原料",
+            "group": "2",
+            "id": "香菇",
+            "size": "8"
+        },
+        {
+            "class": "原料",
+            "group": "2",
+            "id": "豆芽",
+            "size": "8"
+        },
+        {
+            "class": "原料",
+            "group": "2",
+            "id": "冬笋",
+            "size": "8"
+        },
+        {
+            "class": "原料",
+            "group": "2",
+            "id": "可乐",
+            "size": "8"
+        },
+        {
+            "class": "原料",
+            "group": "2",
+            "id": "罗勒",
+            "size": "8"
+        },
+        {
+            "class": "原料",
+            "group": "2",
+            "id": "蛋黄",
+            "size": "8"
+        },
+        {
+            "class": "原料",
+            "group": "2",
+            "id": "鲤鱼",
+            "size": "8"
+        },
+        {
+            "class": "原料",
+            "group": "2",
+            "id": "西兰花",
+            "size": "8"
+        },
+        {
+            "class": "原料",
+            "group": "2",
+            "id": "鸡精",
+            "size": "8"
+        },
+        {
+            "class": "原料",
+            "group": "2",
+            "id": "水",
+            "size": "8"
+        },
+        {
+            "class": "原料",
+            "group": "2",
+            "id": "黄椒",
+            "size": "8"
+        },
+        {
+            "class": "原料",
+            "group": "2",
+            "id": "肉汤或水",
+            "size": "8"
+        },
+        {
+            "class": "原料",
+            "group": "2",
+            "id": "鸡汁",
+            "size": "8"
+        },
+        {
+            "class": "原料",
+            "group": "2",
+            "id": "油菜",
+            "size": "8"
+        },
+        {
+            "class": "原料",
+            "group": "2",
+            "id": "里脊肉",
+            "size": "8"
+        },
+        {
+            "class": "原料",
+            "group": "2",
+            "id": "麻油",
+            "size": "8"
+        },
+        {
+            "class": "原料",
+            "group": "2",
+            "id": "榨菜",
+            "size": "8"
+        },
+        {
+            "class": "原料",
+            "group": "2",
+            "id": "橙子",
+            "size": "8"
+        },
+        {
+            "class": "原料",
+            "group": "2",
+            "id": "胡椒",
+            "size": "8"
+        },
+        {
+            "class": "原料",
+            "group": "2",
+            "id": "五香粉",
+            "size": "8"
+        },
+        {
+            "class": "原料",
+            "group": "2",
+            "id": "西红柿",
+            "size": "8"
+        },
+        {
+            "class": "原料",
+            "group": "2",
+            "id": "橄榄油",
+            "size": "8"
+        },
+        {
+            "class": "原料",
+            "group": "2",
+            "id": "生抽",
+            "size": "8"
+        },
+        {
+            "class": "原料",
+            "group": "2",
+            "id": "蒜",
+            "size": "8"
+        },
+        {
+            "class": "原料",
+            "group": "2",
+            "id": "香椿",
+            "size": "8"
+        },
+        {
+            "class": "原料",
+            "group": "2",
+            "id": "麻椒",
+            "size": "8"
+        },
+        {
+            "class": "原料",
+            "group": "2",
+            "id": "亚麻籽",
+            "size": "8"
+        },
+        {
+            "class": "原料",
+            "group": "2",
+            "id": "老抽",
+            "size": "8"
+        },
+        {
+            "class": "原料",
+            "group": "2",
+            "id": "海鱼",
+            "size": "8"
+        },
+        {
+            "class": "原料",
+            "group": "2",
+            "id": "浓汤宝",
+            "size": "8"
+        },
+        {
+            "class": "原料",
+            "group": "2",
+            "id": "桂皮",
+            "size": "8"
+        },
+        {
+            "class": "原料",
+            "group": "2",
+            "id": "水煮细笋",
+            "size": "8"
+        },
+        {
+            "class": "原料",
+            "group": "2",
+            "id": "水青菜",
+            "size": "8"
+        },
+        {
+            "class": "原料",
+            "group": "2",
+            "id": "尖椒",
+            "size": "8"
+        },
+        {
+            "class": "原料",
+            "group": "2",
+            "id": "地瓜粉",
+            "size": "8"
+        },
+        {
+            "class": "原料",
+            "group": "2",
+            "id": "油",
+            "size": "8"
+        },
+        {
+            "class": "原料",
+            "group": "2",
+            "id": "鸡蛋",
+            "size": "8"
+        },
+        {
+            "class": "原料",
+            "group": "2",
+            "id": "蕃茄酱",
+            "size": "8"
+        },
+        {
+            "class": "原料",
+            "group": "2",
+            "id": "郫县豆瓣",
+            "size": "8"
+        },
+        {
+            "class": "原料",
+            "group": "2",
+            "id": "草鱼尾",
+            "size": "8"
+        },
+        {
+            "class": "原料",
+            "group": "2",
+            "id": "白玉菇",
+            "size": "8"
+        },
+        {
+            "class": "原料",
+            "group": "2",
+            "id": "生菜",
+            "size": "8"
+        },
+        {
+            "class": "原料",
+            "group": "2",
+            "id": "火腿",
+            "size": "8"
+        },
+        {
+            "class": "原料",
+            "group": "2",
+            "id": "八角",
+            "size": "8"
+        },
+        {
+            "class": "原料",
+            "group": "2",
+            "id": "肉丝",
+            "size": "8"
+        },
+        {
+            "class": "原料",
+            "group": "2",
+            "id": "生粉",
+            "size": "8"
+        },
+        {
+            "class": "原料",
+            "group": "2",
+            "id": "花生",
+            "size": "8"
+        },
+        {
+            "class": "原料",
+            "group": "2",
+            "id": "薄荷叶",
+            "size": "8"
+        },
+        {
+            "class": "原料",
+            "group": "2",
+            "id": "啤酒",
+            "size": "8"
+        },
+        {
+            "class": "原料",
+            "group": "2",
+            "id": "醋",
+            "size": "8"
+        },
+        {
+            "class": "原料",
+            "group": "2",
+            "id": "青菜",
+            "size": "8"
+        },
+        {
+            "class": "原料",
+            "group": "2",
+            "id": "莴笋",
+            "size": "8"
+        },
+        {
+            "class": "原料",
+            "group": "2",
+            "id": "香菜",
+            "size": "8"
+        },
+        {
+            "class": "原料",
+            "group": "2",
+            "id": "酱油",
+            "size": "8"
+        },
+        {
+            "class": "原料",
+            "group": "2",
+            "id": "黄瓜",
+            "size": "8"
+        },
+        {
+            "class": "原料",
+            "group": "2",
+            "id": "山楂",
+            "size": "8"
+        },
+        {
+            "class": "原料",
+            "group": "2",
+            "id": "腰果",
+            "size": "8"
+        },
+        {
+            "class": "原料",
+            "group": "2",
+            "id": "瘦肉",
+            "size": "8"
+        },
+        {
+            "class": "原料",
+            "group": "2",
+            "id": "素肉丝",
+            "size": "8"
+        },
+        {
+            "class": "原料",
+            "group": "2",
+            "id": "鸡翅根",
+            "size": "8"
+        },
+        {
+            "class": "原料",
+            "group": "2",
+            "id": "茄汁",
+            "size": "8"
+        },
+        {
+            "class": "原料",
+            "group": "2",
+            "id": "香叶",
+            "size": "8"
+        },
+        {
+            "class": "原料",
+            "group": "2",
+            "id": "红油豆瓣",
+            "size": "8"
+        },
+        {
+            "class": "原料",
+            "group": "2",
+            "id": "虾",
+            "size": "8"
+        },
+        {
+            "class": "原料",
+            "group": "2",
+            "id": "木瓜",
+            "size": "8"
+        },
+        {
+            "class": "原料",
+            "group": "2",
+            "id": "鲈鱼",
+            "size": "8"
+        },
+        {
+            "class": "原料",
+            "group": "2",
+            "id": "金针菇",
+            "size": "8"
+        },
+        {
+            "class": "原料",
+            "group": "2",
+            "id": "牛油果",
+            "size": "8"
+        },
+        {
+            "class": "原料",
+            "group": "2",
+            "id": "虾仁",
+            "size": "8"
+        },
+        {
+            "class": "原料",
+            "group": "2",
+            "id": "土豆",
+            "size": "8"
+        },
+        {
+            "class": "原料",
+            "group": "2",
+            "id": "圣女果干蜜饯",
+            "size": "8"
+        },
+        {
+            "class": "原料",
+            "group": "2",
+            "id": "高浓度白酒",
+            "size": "8"
+        },
+        {
+            "class": "原料",
+            "group": "2",
+            "id": "圣女果",
+            "size": "8"
+        },
+        {
+            "class": "原料",
+            "group": "2",
+            "id": "鱿鱼",
+            "size": "8"
+        },
+        {
+            "class": "原料",
+            "group": "2",
+            "id": "胡萝卜丝",
+            "size": "8"
+        },
+        {
+            "class": "原料",
+            "group": "2",
+            "id": "培根",
+            "size": "8"
+        },
+        {
+            "class": "原料",
+            "group": "2",
+            "id": "猪肉",
+            "size": "8"
+        },
+        {
+            "class": "原料",
+            "group": "2",
+            "id": "笋",
+            "size": "8"
+        },
+        {
+            "class": "原料",
+            "group": "2",
+            "id": "植物油",
+            "size": "8"
+        },
+        {
+            "class": "原料",
+            "group": "2",
+            "id": "牛奶",
+            "size": "8"
+        },
+        {
+            "class": "菜品大类",
+            "group": "0",
+            "id": "1-红烧肉类",
+            "size": "16"
+        },
+        {
+            "class": "菜品大类",
+            "group": "0",
+            "id": "4-糖醋排骨类",
+            "size": "16"
+        },
+        {
+            "class": "菜品大类",
+            "group": "0",
+            "id": "7-凉拌黑木耳类",
+            "size": "16"
+        },
+        {
+            "class": "菜品大类",
+            "group": "0",
+            "id": "10-意大利面类",
+            "size": "16"
+        },
+        {
+            "class": "菜品大类",
+            "group": "0",
+            "id": "8-鱼香肉丝类",
+            "size": "16"
+        },
+        {
+            "class": "菜品大类",
+            "group": "0",
+            "id": "9-水煮肉片类",
+            "size": "16"
+        },
+        {
+            "class": "菜品大类",
+            "group": "0",
+            "id": "2-红烧排骨类",
+            "size": "16"
+        },
+        {
+            "class": "菜品大类",
+            "group": "0",
+            "id": "6-红烧鱼类",
+            "size": "16"
+        },
+        {
+            "class": "菜品大类",
+            "group": "0",
+            "id": "3-可乐鸡翅类",
+            "size": "16"
+        },
+        {
+            "class": "菜品大类",
+            "group": "0",
+            "id": "5-水煮鱼类",
+            "size": "16"
+        }
+    ]
+}
