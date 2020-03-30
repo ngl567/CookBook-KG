@@ -67,6 +67,12 @@ if __name__ == '__main__':
         else:
             # TODO 自然语言问题无法匹配到已有的正则模板上，回答“无法理解”
             print('这个问题我真是无法回答。')
+            print("提示：您可以尝试提问例如：")
+            print("如何制作水煮鱼？")
+            print("水煮鱼的制作步骤是什么？")
+            print("红烧肉类包含哪些菜？")
+            print("麻辣水煮肉片的食材有哪些？")
+            print("水煮肉片的主料是什么？")
 
         #print('\nquestion: {}'.format(question))
         print('=' * 150)
