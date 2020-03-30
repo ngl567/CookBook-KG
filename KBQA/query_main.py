@@ -16,8 +16,7 @@ if __name__ == '__main__':
     fuseki = jena_sparql_endpoint.JenaFuseki()
     # TODO 初始化自然语言到SPARQL查询的模块，参数是外部词典列表。
     q2s = question2sparql.Question2Sparql(
-        ['./external_dict/movie_title.txt', './external_dict/person_name.txt',
-         './external_dict/vivre_zhpname.txt', './external_dict/onepiece_place_terminology.txt', './external_dict/entities_list.txt'])
+        ['./external_dict/entities_list.txt'])
 
     print("\n\n爱好美食的您好啊，小食在此为您提供问答服务")
     print("可以提问的菜品大类包括：1.红烧肉类，2.红烧排骨类，3.可乐鸡翅类，4.糖醋排骨类，5.水煮鱼类")
