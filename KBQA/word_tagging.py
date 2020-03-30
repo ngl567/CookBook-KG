@@ -43,11 +43,7 @@ class Tagger:
 
 # TODO 用于测试
 if __name__ == '__main__':
-    tagger = Tagger(['./external_dict/movie_title.txt',
-                     './external_dict/person_name.txt',
-                     './external_dict/vivre_zhpname.txt',
-                     './external_dict/onepiece_place_terminology.txt',
-                     './external_dict/entities_list.txt'])
+    tagger = Tagger(['./external_dict/entities_list.txt'])
     while True:
         s = input()
         for i in tagger.get_word_objects(s):
