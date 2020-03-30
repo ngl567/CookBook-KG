@@ -885,7 +885,9 @@ $(document).ready(function() {
             // 去掉旧的<p></p>
             $('#info p').remove();
 		
-	    $('#info').append('<p>' + '<img src="https://raw.githubusercontent.com/ngl567/CookBook-KG/master/visualization/recipe_photo/' + name + '.jpg" />' + '</p>');
+	    if ('主料' in info[name]){
+		$('#info').append('<p>' + '<img src="https://raw.githubusercontent.com/ngl567/CookBook-KG/master/visualization/recipe_photo/' + name + '.jpg" />' + '</p>');
+	    }
 
             for (var key in info[name]) {
                 value = info[name][key];
@@ -1065,7 +1067,9 @@ $(document).ready(function() {
             // 去掉旧的<p></p>
             $('#info p').remove();
 		
-	    $('#info').append('<p>' + '<img src="https://raw.githubusercontent.com/ngl567/CookBook-KG/master/visualization/recipe_photo/' + name + '.jpg" />' + '</p>');
+	    if ('主料' in info[name]){
+		$('#info').append('<p>' + '<img src="https://raw.githubusercontent.com/ngl567/CookBook-KG/master/visualization/recipe_photo/' + name + '.jpg" />' + '</p>');
+	    }
 
             for (var key in info[name]) {
                 value = info[name][key];
