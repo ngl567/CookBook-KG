@@ -25,7 +25,7 @@ mini版的Github Page[**访问入口**](https://ngl567.github.io/CookBook-KG/)�
 使用本系统需要预装软件：  
 + Apache Jena Fuseki：Jena Fuseki是一个SPARQL服务，通过HTTP提供使用SPARQL协议的REST式SPARQLHTTP更新，SPARQL查询和SPARQL更新。  
 从[**官网**](http://jena.apache.org/download/)下载最新版本的fuseki压缩包，并解压到目标文件夹。在apache-jena-fuseki的目标文件夹下用命令行输入命令`java -jar fuseki-server.jar`，启动Fuseki服务。
-+ JAVA8：运行fuseki需要java环境，如果没有安装JAVA8.0及以上版本，请前往[oracle官网](http://www.oracle.com/technetwork/java/javase/downloads/index.html)上下载最新版本的JDK然后安装，并配置环境路径。
++ JAVA：运行fuseki需要java环境，如果没有安装JAVA8.0及以上版本，请前往[oracle官网](http://www.oracle.com/technetwork/java/javase/downloads/index.html)上下载最新版本的JDK然后安装，并配置环境路径。
 系统的流程为：解析输入的自然语言问句生成 SPARQL 查询，进一步请求后台基于 TDB 知识库的 Apache Jena Fuseki 服务, 得到答案。
 #### 可以提问的问题类型：
 &nbsp;&nbsp;1.某一类菜包含的具体菜品；  
