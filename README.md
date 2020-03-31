@@ -9,7 +9,7 @@ A knowledge graph for Chinese cookbook（中式菜谱知识图谱），可以实
 + 可视化能够对各种菜品及关联关系有一个全局的认识；
 + 智能问答系统可采用自然语言进行提问，系统反馈答案结果。
 ## 功能使用
-### 可视化展示及搜索：
+### 1. 可视化展示及搜索：
 ![image](https://github.com/ngl567/CookBook-KG/blob/master/miniviz-1.png)  ![image](https://github.com/ngl567/CookBook-KG/blob/master/miniviz-2-fig.png)  
 同一类实体用相同颜色的节点表示，鼠标位于某个节点上方时显示其相关联的其它实体和之间的关系名称；  
 具有同一类实体显示开关，节点显示模式转换，并支持搜索功能；  
@@ -17,7 +17,7 @@ A knowledge graph for Chinese cookbook（中式菜谱知识图谱），可以实
 + **mini**版：包含10大类，**50**种菜品之间的关联关系，包括菜品制作的各种食材和制作步骤，轻量级的mini版同时支持电脑和手机浏览器打开，如需体验可直接进入Github Page[**访问入口**](https://ngl567.github.io/CookBook-KG/)。
 + **pro**版(开发中)：包含**362**大类，**八千多**种菜品之间的关联关系，包括菜品制作的各种原料和制作步骤。
 
-### 智能问答系统（KBQA）：
+### 2. 智能问答系统（KBQA）：
 ![image](https://github.com/ngl567/CookBook-KG/blob/master/kbqa.png)  
 基于构建的中式菜谱知识图谱，针对其中和菜品有关的各类问题，智能问答系统可以给出对应问题的答案。  
 本项目中的智能问答机器人名为**小吃**。  
