@@ -14,7 +14,7 @@ A knowledge graph for Chinese cookbook（中式菜谱知识图谱），可以实
 同一类实体用相同颜色的节点表示，鼠标位于某个节点上方时显示其相关联的其它实体和之间的关系名称；  
 具有同一类实体显示开关，节点显示模式转换，并支持搜索功能；  
 每种菜品的信息栏中显示菜品对应的成品图片，并利用entities_aglin.py进行了实体对齐，消除了食品原料中的冗余信息。
-+ **mini**版：包含10大类，**50**种菜品之间的关联关系，包括菜品制作的各种食材和制作步骤，mini版的Github Page[**访问入口**](https://ngl567.github.io/CookBook-KG/)。
++ **mini**版：包含10大类，**50**种菜品之间的关联关系，包括菜品制作的各种食材和制作步骤，轻量级的mini版同时支持电脑和手机浏览器打开，如需体验可直接进入Github Page[**访问入口**](https://ngl567.github.io/CookBook-KG/)。
 + **pro**版(开发中)：包含**362**大类，**八千多**种菜品之间的关联关系，包括菜品制作的各种原料和制作步骤。
 
 ### 智能问答系统（KBQA）：
@@ -25,7 +25,7 @@ A knowledge graph for Chinese cookbook（中式菜谱知识图谱），可以实
 + Apache Jena Fuseki：Jena Fuseki是一个SPARQL服务，通过HTTP提供使用SPARQL协议的REST式SPARQLHTTP更新，SPARQL查询和SPARQL更新。  
 从[**官网**](http://jena.apache.org/download/)下载最新版本的fuseki压缩包，并解压到目标文件夹。在apache-jena-fuseki的目标文件夹下用命令行输入命令`java -jar fuseki-server.jar`，启动Fuseki服务。接着，打开浏览器，访问：<http://localhost:3030>，创建一个持久化数据库，并上传/data/aifoodtime_ntriples.nt三元组数据集，完成知识库的准备。
 + JAVA：运行fuseki需要java环境，如果没有安装JAVA8.0及以上版本，请前往[oracle官网](http://www.oracle.com/technetwork/java/javase/downloads/index.html)上下载最新版本的JDK然后安装，并配置环境路径。
-系统的流程为：解析输入的自然语言问句生成 SPARQL 查询，进一步请求后台基于 TDB 知识库的 Apache Jena Fuseki 服务, 得到答案。如果知识库中不存在对应问题的答案或者对于提出的自然语言问题无法理解，系统也会给出相应回复。
+系统的流程为：解析输入的自然语言问句生成 SPARQL 查询，进一步请求后台基于 TDB 知识库的 Apache Jena Fuseki 服务, 得到答案。如果知识库中不存在问题的答案或者对于提出的自然语言问题无法理解，系统也会给出相应回复。
 #### 可以提问的问题类型：
 &nbsp;&nbsp;1.某一类菜包含的具体菜品；  
 &nbsp;&nbsp;2.某一个特色菜品的所有原料；  
