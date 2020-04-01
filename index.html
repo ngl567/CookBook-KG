@@ -12,13 +12,13 @@
     <meta name="author" content="" />
     <link rel="shortcut icon" href="">
     <script>
-	var _hmt = _hmt || [];
-	(function() {
-  	    var hm = document.createElement("script");
-  	    hm.src = "https://hm.baidu.com/hm.js?cdef6708f1dc40904a5927911ec338c8";
-  	    var s = document.getElementsByTagName("script")[0]; 
-  	    s.parentNode.insertBefore(hm, s);
-	})();
+        var _hmt = _hmt || [];
+        (function() {
+            var hm = document.createElement("script");
+            hm.src = "https://hm.baidu.com/hm.js?cdef6708f1dc40904a5927911ec338c8";
+            var s = document.getElementsByTagName("script")[0]; 
+            s.parentNode.insertBefore(hm, s);
+        })();
     </script>
     <script src="https://libs.baidu.com/jquery/2.1.4/jquery.min.js"></script>
     <link href="https://libs.baidu.com/bootstrap/3.3.4/css/bootstrap.min.css" rel="stylesheet">
@@ -226,7 +226,7 @@ body {
     /*bottom: 40px;*/
     right: 10px;   		/*20px*/
     text-align: right;		/*right*/
-    width: 260px;  		/*255px*/
+    width: 253px;  		/*255px*/
 }
 
 #info p {
@@ -378,7 +378,9 @@ $(document).ready(function() {
     // 存之后生成的关系图数据
     var graph;
 
-    d3.json("https://raw.githubusercontent.com/ngl567/CookBook-KG/master/visualization/vizdata_mimini_aglin.json", function(error, data) {
+    // d3.json("vizdata_vivrecard_relation.json", function(error, data) {
+    // d3.json("test_vizdata_vivrecard_relation.json", function(error, data) {
+    d3.json("https://raw.githubusercontent.com/ngl567/CookBook-KG/master/visualization/vizdata_mimini.json", function(error, data) {
         if (error) throw error;
 
         graph = data;
@@ -614,7 +616,43 @@ $(document).ready(function() {
 		    return 'inactive'
 		}
             });
-	    
+	    /*
+	    d3.select('#svg1 .nodes').selectAll('circle').attr('class', function(d){
+                // 当前选中类型实体隐藏
+		if (d.group == 0) {
+		    return '';
+		}
+		if (d.group == 1 && sw2 == false){
+		    return 'inactive';
+		}
+		if (d.group == 2 && sw3 == false){
+		    return 'inactive';
+		}
+            });
+	    d3.select('#svg1 .texts').selectAll('text').attr('class', function(d){
+                // 当前选中类型实体隐藏
+		if (d.group == 0) {
+		    return '';
+		}
+		if (d.group == 1 && sw2 == false){
+		    return 'inactive';
+		}
+		if (d.group == 2 && sw3 == false){
+		    return 'inactive';
+		}
+            });
+	    d3.select("#svg1 .links").selectAll('line').attr('class', function(d) {
+                if (d.source.group == 0 || d.target.group == 0) {
+                    return '';
+                }
+		if ((d.source.group == 1 || d.target.group == 1) && sw2 == false){
+		    return 'inactive';
+		}
+		if ((d.source.group == 2 || d.target.group == 2) && sw3 == false){
+		    return 'inactive';
+		}
+            });
+	    */
         }
         else {
 	    sw1 = false;
@@ -662,6 +700,43 @@ $(document).ready(function() {
 		    return 'inactive'
 		}
             });
+	    /*
+	    d3.select('#svg1 .nodes').selectAll('circle').attr('class', function(d){
+                // 当前选中类型实体隐藏
+		if (d.group == 0) {
+		    return 'inactive';
+		}
+		if (d.group == 1 && sw2 == false){
+		    return 'inactive';
+		}
+		if (d.group == 2 && sw3 == false){
+		    return 'inactive';
+		}
+            });
+	    d3.select('#svg1 .texts').selectAll('text').attr('class', function(d){
+                // 当前选中类型实体隐藏
+		if (d.group == 0) {
+		    return 'inactive';
+		}
+		if (d.group == 1 && sw2 == false){
+		    return 'inactive';
+		}
+		if (d.group == 2 && sw3 == false){
+		    return 'inactive';
+		}
+            });
+	    d3.select("#svg1 .links").selectAll('line').attr('class', function(d) {
+                if (d.source.group == 0 || d.target.group == 0) {
+                    return 'inactive';
+                }
+		if ((d.source.group == 1 || d.target.group == 1) && sw2 == false){
+		    return 'inactive';
+		}
+		if ((d.source.group == 2 || d.target.group == 2) && sw3 == false){
+		    return 'inactive';
+		}
+            });
+	    */
         }
     });
 
@@ -718,6 +793,43 @@ $(document).ready(function() {
 		    return 'inactive'
 		}
             });
+	    /*
+	    d3.select('#svg1 .nodes').selectAll('circle').attr('class', function(d){
+                // 当前选中类型实体显示
+		if (d.group == 1) {
+		    return '';
+		}
+		if (d.group == 0 && sw1 == false){
+		    return 'inactive';
+		}
+		if (d.group == 2 && sw3 == false){
+		    return 'inactive';
+		}
+            });
+	    d3.select('#svg1 .texts').selectAll('text').attr('class', function(d){
+                // 当前选中类型实体显示
+		if (d.group == 1) {
+		    return '';
+		}
+		if (d.group == 0 && sw1 == false){
+		    return 'inactive';
+		}
+		if (d.group == 2 && sw3 == false){
+		    return 'inactive';
+		}
+            });
+	    d3.select("#svg1 .links").selectAll('line').attr('class', function(d) {
+                if (d.source.group == 1 || d.target.group == 1) {
+                    return '';
+                }
+		if ((d.source.group == 0 || d.target.group == 0) && sw1 == false){
+		    return 'inactive';
+		}
+		if ((d.source.group == 2 || d.target.group == 2) && sw3 == false){
+		    return 'inactive';
+		}
+            });
+	    */
         }
         else {
 	    sw2 = false;
@@ -765,6 +877,43 @@ $(document).ready(function() {
 		    return 'inactive'
 		}
             });
+	    /*
+	    d3.select('#svg1 .nodes').selectAll('circle').attr('class', function(d){
+                // 当前选中类型实体显示
+		if (d.group == 1) {
+		    return 'inactive';
+		}
+		if (d.group == 0 && sw1 == false){
+		    return 'inactive';
+		}
+		if (d.group == 2 && sw3 == false){
+		    return 'inactive';
+		}
+            });
+	    d3.select('#svg1 .texts').selectAll('text').attr('class', function(d){
+                // 当前选中类型实体显示
+		if (d.group == 1) {
+		    return 'inactive';
+		}
+		if (d.group == 0 && sw1 == false){
+		    return 'inactive';
+		}
+		if (d.group == 2 && sw3 == false){
+		    return 'inactive';
+		}
+            });
+	    d3.select("#svg1 .links").selectAll('line').attr('class', function(d) {
+                if (d.source.group == 1 || d.target.group == 1) {
+                    return 'inactive';
+                }
+		if ((d.source.group == 0 || d.target.group == 0) && sw1 == false){
+		    return 'inactive';
+		}
+		if ((d.source.group == 2 || d.target.group == 2) && sw3 == false){
+		    return 'inactive';
+		}
+            });
+	    */
         }
     });
 
@@ -821,6 +970,43 @@ $(document).ready(function() {
 		    return 'inactive'
 		}
             });
+	    /*
+	    d3.select('#svg1 .nodes').selectAll('circle').attr('class', function(d){
+                // 当前选中类型实体显示
+		if (d.group == 2) {
+		    return '';
+		}
+		if (d.group == 0 && sw1 == false){
+		    return 'inactive';
+		}
+		if (d.group == 1 && sw2 == false){
+		    return 'inactive';
+		}
+            });
+	    d3.select('#svg1 .texts').selectAll('text').attr('class', function(d){
+                // 当前选中类型实体显示
+		if (d.group == 2) {
+		    return '';
+		}
+		if (d.group == 0 && sw1 == false){
+		    return 'inactive';
+		}
+		if (d.group == 1 && sw2 == false){
+		    return 'inactive';
+		}
+            });
+	    d3.select("#svg1 .links").selectAll('line').attr('class', function(d) {
+                if (d.source.group == 2 || d.target.group == 2) {
+                    return '';
+                }
+		if ((d.source.group == 0 || d.target.group == 0) && sw1 == false){
+		    return 'inactive';
+		}
+		if ((d.source.group == 1 || d.target.group == 1) && sw2 == false){
+		    return 'inactive';
+		}
+            });
+	    */
         }
         else {
 	    sw3 = false;
@@ -868,6 +1054,43 @@ $(document).ready(function() {
 		    return 'inactive'
 		}
             });
+	    /*
+	    d3.select('#svg1 .nodes').selectAll('circle').attr('class', function(d){
+                // 当前选中类型实体显示
+		if (d.group == 2) {
+		    return 'inactive';
+		}
+		if (d.group == 0 && sw1 == false){
+		    return 'inactive';
+		}
+		if (d.group == 1 && sw2 == false){
+		    return 'inactive';
+		}
+            });
+	    d3.select('#svg1 .texts').selectAll('text').attr('class', function(d){
+                // 当前选中类型实体显示
+		if (d.group == 2) {
+		    return 'inactive';
+		}
+		if (d.group == 0 && sw1 == false){
+		    return 'inactive';
+		}
+		if (d.group == 1 && sw2 == false){
+		    return 'inactive';
+		}
+            });
+	    d3.select("#svg1 .links").selectAll('line').attr('class', function(d) {
+                if (d.source.group == 2 || d.target.group == 2) {
+                    return 'inactive';
+                }
+		if ((d.source.group == 0 || d.target.group == 0) && sw1 == false){
+		    return 'inactive';
+		}
+		if ((d.source.group == 1 || d.target.group == 1) && sw2 == false){
+		    return 'inactive';
+		}
+            });
+	    */
         }
     });
 
@@ -884,10 +1107,18 @@ $(document).ready(function() {
             $('#info h4').css('color', $(this).attr('fill')).text(name);
             // 去掉旧的<p></p>
             $('#info p').remove();
-		
+
+            
+	    // 增加各个人物的头像
+            if (typeof(info[name]) != "undefined") {
+                //avatar_ID = info[name]['ID'][0]
+                //if(outlier_avatar_ID.indexOf(avatar_ID) != -1) {
+                //    avatar_ID = avatar_ID + '0'
+                //}
 	    if ('主料' in info[name]){
-		$('#info').append('<p>' + '<img src="https://raw.githubusercontent.com/ngl567/CookBook-KG/master/visualization/recipe_photo/' + name + '.jpg" />' + '</p>');
+		    $('#info').append('<p>' + '<img src="https://raw.githubusercontent.com/ngl567/CookBook-KG/master/visualization/recipe_photo/' + name + '.jpg" />' + '</p>');
 	    }
+            }
 
             for (var key in info[name]) {
                 value = info[name][key];
@@ -902,7 +1133,13 @@ $(document).ready(function() {
                 if (flag_none == true) {              // 排除为空的属性值
                     continue;
                 }
-		    
+                if (key.indexOf("年前") != -1) { // 排除历史的属性值
+                    continue;
+                }
+                // 排除不想要的字段
+                if (key == '和路飞的身高比例') {
+                    continue;
+                }
                 $('#info').append('<p><span>' + key + '</span></p>');
 		var item_info = '';
 		count = 0
@@ -1066,10 +1303,21 @@ $(document).ready(function() {
             $('#info h4').css('color', $(this).attr('fill')).text(name);
             // 去掉旧的<p></p>
             $('#info p').remove();
-		
+
+            
+	    // 增加各个人物的头像
+            if (typeof(info[name]) != "undefined") {
+                //avatar_ID = info[name]['ID'][0]
+                //if(outlier_avatar_ID.indexOf(avatar_ID) != -1) {
+                //    avatar_ID = avatar_ID + '0'
+                //}
+
 	    if ('主料' in info[name]){
-		$('#info').append('<p>' + '<img src="https://raw.githubusercontent.com/ngl567/CookBook-KG/master/visualization/recipe_photo/' + name + '.jpg" />' + '</p>');
+                $('#info').append('<p>' + '<img src="https://raw.githubusercontent.com/ngl567/CookBook-KG/master/visualization/recipe_photo/' + name + '.jpg" />' + '</p>');
 	    }
+
+            }
+	    
 
             for (var key in info[name]) {
                 value = info[name][key];
@@ -1082,6 +1330,13 @@ $(document).ready(function() {
                     }
                 } 
                 if (flag_none == true) {              // 排除为空的属性值
+                    continue;
+                }
+                if (key.indexOf("年前") != -1) { // 排除历史的属性值
+                    continue;
+                }
+                // 排除不想要的字段
+                if (key == '和路飞的身高比例') {
                     continue;
                 }
 
@@ -1295,10 +1550,11 @@ $(document).ready(function() {
     // 结点信息框
     var info;
 
+    // d3.json("vizdata_vivrecard_avpair.json", function(error, data){
     d3.json("https://raw.githubusercontent.com/ngl567/CookBook-KG/master/visualization/entities_item_mimini.json", function(error, data){
         info = data;
     })
-	
+
 });
 </script>
 </html>
