@@ -378,9 +378,7 @@ $(document).ready(function() {
     // 存之后生成的关系图数据
     var graph;
 
-    // d3.json("vizdata_vivrecard_relation.json", function(error, data) {
-    // d3.json("test_vizdata_vivrecard_relation.json", function(error, data) {
-    d3.json("https://raw.githubusercontent.com/ngl567/CookBook-KG/master/visualization/vizdata_mimini.json", function(error, data) {
+    d3.json("https://raw.githubusercontent.com/ngl567/CookBook-KG/master/visualization/vizdata_mimini_aglin.json", function(error, data) {
         if (error) throw error;
 
         graph = data;
@@ -1546,11 +1544,9 @@ $(document).ready(function() {
        }
     })
 
-
     // 结点信息框
     var info;
 
-    // d3.json("vizdata_vivrecard_avpair.json", function(error, data){
     d3.json("https://raw.githubusercontent.com/ngl567/CookBook-KG/master/visualization/entities_item_mimini.json", function(error, data){
         info = data;
     })
