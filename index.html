@@ -875,43 +875,6 @@ $(document).ready(function() {
 		    return 'inactive'
 		}
             });
-	    /*
-	    d3.select('#svg1 .nodes').selectAll('circle').attr('class', function(d){
-                // 当前选中类型实体显示
-		if (d.group == 1) {
-		    return 'inactive';
-		}
-		if (d.group == 0 && sw1 == false){
-		    return 'inactive';
-		}
-		if (d.group == 2 && sw3 == false){
-		    return 'inactive';
-		}
-            });
-	    d3.select('#svg1 .texts').selectAll('text').attr('class', function(d){
-                // 当前选中类型实体显示
-		if (d.group == 1) {
-		    return 'inactive';
-		}
-		if (d.group == 0 && sw1 == false){
-		    return 'inactive';
-		}
-		if (d.group == 2 && sw3 == false){
-		    return 'inactive';
-		}
-            });
-	    d3.select("#svg1 .links").selectAll('line').attr('class', function(d) {
-                if (d.source.group == 1 || d.target.group == 1) {
-                    return 'inactive';
-                }
-		if ((d.source.group == 0 || d.target.group == 0) && sw1 == false){
-		    return 'inactive';
-		}
-		if ((d.source.group == 2 || d.target.group == 2) && sw3 == false){
-		    return 'inactive';
-		}
-            });
-	    */
         }
     });
 
@@ -968,43 +931,6 @@ $(document).ready(function() {
 		    return 'inactive'
 		}
             });
-	    /*
-	    d3.select('#svg1 .nodes').selectAll('circle').attr('class', function(d){
-                // 当前选中类型实体显示
-		if (d.group == 2) {
-		    return '';
-		}
-		if (d.group == 0 && sw1 == false){
-		    return 'inactive';
-		}
-		if (d.group == 1 && sw2 == false){
-		    return 'inactive';
-		}
-            });
-	    d3.select('#svg1 .texts').selectAll('text').attr('class', function(d){
-                // 当前选中类型实体显示
-		if (d.group == 2) {
-		    return '';
-		}
-		if (d.group == 0 && sw1 == false){
-		    return 'inactive';
-		}
-		if (d.group == 1 && sw2 == false){
-		    return 'inactive';
-		}
-            });
-	    d3.select("#svg1 .links").selectAll('line').attr('class', function(d) {
-                if (d.source.group == 2 || d.target.group == 2) {
-                    return '';
-                }
-		if ((d.source.group == 0 || d.target.group == 0) && sw1 == false){
-		    return 'inactive';
-		}
-		if ((d.source.group == 1 || d.target.group == 1) && sw2 == false){
-		    return 'inactive';
-		}
-            });
-	    */
         }
         else {
 	    sw3 = false;
@@ -1052,43 +978,6 @@ $(document).ready(function() {
 		    return 'inactive'
 		}
             });
-	    /*
-	    d3.select('#svg1 .nodes').selectAll('circle').attr('class', function(d){
-                // 当前选中类型实体显示
-		if (d.group == 2) {
-		    return 'inactive';
-		}
-		if (d.group == 0 && sw1 == false){
-		    return 'inactive';
-		}
-		if (d.group == 1 && sw2 == false){
-		    return 'inactive';
-		}
-            });
-	    d3.select('#svg1 .texts').selectAll('text').attr('class', function(d){
-                // 当前选中类型实体显示
-		if (d.group == 2) {
-		    return 'inactive';
-		}
-		if (d.group == 0 && sw1 == false){
-		    return 'inactive';
-		}
-		if (d.group == 1 && sw2 == false){
-		    return 'inactive';
-		}
-            });
-	    d3.select("#svg1 .links").selectAll('line').attr('class', function(d) {
-                if (d.source.group == 2 || d.target.group == 2) {
-                    return 'inactive';
-                }
-		if ((d.source.group == 0 || d.target.group == 0) && sw1 == false){
-		    return 'inactive';
-		}
-		if ((d.source.group == 1 || d.target.group == 1) && sw2 == false){
-		    return 'inactive';
-		}
-            });
-	    */
         }
     });
 
@@ -1131,13 +1020,7 @@ $(document).ready(function() {
                 if (flag_none == true) {              // 排除为空的属性值
                     continue;
                 }
-                if (key.indexOf("年前") != -1) { // 排除历史的属性值
-                    continue;
-                }
-                // 排除不想要的字段
-                if (key == '和路飞的身高比例') {
-                    continue;
-                }
+
                 $('#info').append('<p><span>' + key + '</span></p>');
 		var item_info = '';
 		count = 0
@@ -1328,13 +1211,6 @@ $(document).ready(function() {
                     }
                 } 
                 if (flag_none == true) {              // 排除为空的属性值
-                    continue;
-                }
-                if (key.indexOf("年前") != -1) { // 排除历史的属性值
-                    continue;
-                }
-                // 排除不想要的字段
-                if (key == '和路飞的身高比例') {
                     continue;
                 }
 
